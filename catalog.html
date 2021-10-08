@@ -44,6 +44,8 @@
       </li>
       <li>Гостиницы</li>
     </ul>
+
+    <!-- Filters -->
     <section class="filters">
       <h2 class="visually-hidden">Фильтры поиска</h2>
       <form class="filters__form" action="https://echo.htmlacademy.ru/">
@@ -105,6 +107,33 @@
           </div>
         </fieldset>
       </form>
+    </section>
+
+    <section class="sorting">
+      <h2 class="visually-hidden">Сортировка Гостиниц</h2>
+      <form class="sorting-form" action="https://echo.htmlacademy.ru/" >
+        <label for="sorting">
+          Найдено гостиниц: <span>38</span>
+        </label>
+        <select name="sorting" id="sorting">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
+        <button type="submit">Отсортировать Гостиницы</button>
+      </form>
+
+      <ul class="sorting-list">
+        <li>
+          <a href="#"><span class="visually-hidden">Показать карточками</span></a>
+        </li>
+        <li>
+          <a href="#"><span class="visually-hidden">Показать как слайд</span></a>
+        </li>
+        <li>
+          <a href="#"><span class="visually-hidden">Показать списоком</span></a>
+        </li>
+      </ul>
     </section>
   </main>
 
