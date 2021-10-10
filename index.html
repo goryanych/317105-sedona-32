@@ -1,115 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Седона</title>
-</head>
-<body>
-
-  <!-- Header -->
-  <header class="page-header">
-    <nav class="page-header__nav page-nav">
-      <ul class="page-nav__list">
-        <li><a>Главная</a></li>
-        <li><a href="#about">О Седоне</a></li>
-        <li><a href="catalog.html">Гостинницы</a></li>
-      </ul>
-    </nav>
-    <a class="page-header__logo page-logo">
-      <img src="" alt="Логотип Седона">
-    </a>
-    <div class="page-header__menu user-menu">
-      <form class="user-menu__form" action="https://echo.htmlacademy.ru/">
-        <input type="search" name="search" required>
-        <button type="submit">
-          <span class="visually-hidden">Поиск</span>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header">
+      <nav class="page-header__nav page-nav">
+        <ul class="page-nav__list">
+          <li><a>Главная</a></li>
+          <li><a href="#about">О Седоне</a></li>
+          <li><a href="catalog.html">Гостинницы</a></li>
+        </ul>
+      </nav>
+      <a class="page-header__logo page-logo">
+        <img src="img/svg/logo.svg" width="138" height="70" alt="Логотип Седона">
+      </a>
+      <div class="page-header__menu user-menu">
+        <form class="user-menu__form" action="https://echo.htmlacademy.ru/">
+          <input type="search" name="search" required>
+          <button type="submit">
+            <span class="visually-hidden">Поиск</span>
+          </button>
+        </form>
+        <button class="user-menu__favorites" type="button">
+          <span class="favorites visually-hidden">Добавить в избранное</span>
         </button>
-      </form>
-      <button class="user-menu__favorites" type="button">
-        <span class="favorites visually-hidden">Добавить в избранное</span>
-      </button>
-      <a class="user-menu__link" href="#">Хочу сюда!</a>
-    </div>
-  </header>
+        <a class="user-menu__link" href="#">Хочу сюда!</a>
+      </div>
+    </header>
 
-  <!-- Main -->
-  <main class="page-main">
-    <h1>Sedona</h1>
-    <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-    <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <!-- Main -->
+    <main class="page-main">
+      <h1 class="visually-hidden">Sedona</h1>
+      <img src="img/jpg/sedona.jpg" width="1200" height="485" alt="Изображение каньона Седона">
+      <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
-    <section class="about" id="about">
-      <ul class="about__list">
-        <li>
-          <h3>Настоящий городок</h3>
-          <p>— №1 —</p>
-          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        </li>
-        <li>
-          <h3>Жильё</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </li>
-        <li>
-          <h3>Еда</h3>
-          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li>
-          <h3>Сувениры</h3>
-          <p>Не только китайского, но и настоящего местного производства!</p>
-        </li>
-        <li>
-          <h3>Там есть мост дьявола</h3>
-          <p>— №2 —</p>
-          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-        </li>
-        <li>
-          <h3>Небольшая площадь</h3>
-          <p>— №3 —</p>
-          <p>Все достопримечательности находятся очень близко</p>
-        </li>
-        <li>
-          <h3>Красивая дорога</h3>
-          <p>— №4 —</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li>
-          <h3>Мало туристов</h3>
-          <p>— №5 —</p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </li>
-      </ul>
-    </section>
-    <section class="search">
-      <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p>
-      <button type="button">Поиск гостинницы в Седоне</button>
-    </section>
-  </main>
+      <section class="about" id="about">
+        <ul class="about__list">
+          <li>
+            <h3>Настоящий городок</h3>
+            <p>— №1 —</p>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+          <li>
+            <h3>Жильё</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li>
+            <h3>Еда</h3>
+            <p>
+              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+            </p>
+          </li>
+          <li>
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и настоящего местного производства!</p>
+          </li>
+          <li>
+            <h3>Там есть мост дьявола</h3>
+            <p>— №2 —</p>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
+          <li>
+            <h3>Небольшая площадь</h3>
+            <p>— №3 —</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <p>— №4 —</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <p>— №5 —</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <h2>Заинтересовались?</h2>
+        <p>
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          предложения гостинниц в Седоне
+        </p>
+        <button type="button">Поиск гостинницы в Седоне</button>
+      </section>
+    </main>
 
-  <!-- Footer -->
-  <footer class="page-footer">
-    <section class="subscribe">
-      <h2>Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subscribe__form" action="https://echo.htmlacademy.ru/">
-        <input type="search" name="search" placeholder="Ваш e-mail" required>
-        <button type="submit">Подписаться</button>
-      </form>
-    </section>
-    <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <ul class="contacts__list social__list">
-        <li><a href="https://twitter.com/htmlacademy_ru">Твитер</a></li>
-        <li><a href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
-        <li><a href="https://www.youtube.com/user/htmlacademyru">Ютуб</a></li>
-      </ul>
-      <address>
-        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </address>
-      <a href="htmlacademy.ru">.html academy</a>
-    </section>
-  </footer>
-
-</body>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <section class="subscribe">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form class="subscribe__form" action="https://echo.htmlacademy.ru/">
+          <input type="search" name="search" placeholder="Ваш e-mail" required>
+          <button type="submit">Подписаться</button>
+        </form>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <ul class="contacts__list social__list">
+          <li><a href="https://twitter.com/htmlacademy_ru">Твитер</a></li>
+          <li><a href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
+          <li><a href="https://www.youtube.com/user/htmlacademyru">Ютуб</a></li>
+        </ul>
+        <address>
+          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+        <a href="htmlacademy.ru">
+          <img src="img/svg/footer-logo.svg" width="115" height="33" alt="Логотип HTML Academy">
+        </a>
+      </section>
+    </footer>
+  </body>
 </html>
