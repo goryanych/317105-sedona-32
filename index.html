@@ -91,21 +91,31 @@
     <!-- Footer -->
     <footer class="page-footer">
       <section class="subscribe">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form class="subscribe__form" action="https://echo.htmlacademy.ru/">
-          <input type="search" name="search" placeholder="Ваш e-mail" required>
-          <button type="submit">Подписаться</button>
+        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+        <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe__form mail-form" action="https://echo.htmlacademy.ru/">
+          <input class="mail-form__input" type="search" name="search" placeholder="Ваш e-mail" required>
+          <button class="mail-form__btn button" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="contacts__list social__list">
-          <li><a href="https://twitter.com/htmlacademy_ru">Твитер</a></li>
-          <li><a href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
-          <li><a href="https://www.youtube.com/user/htmlacademyru">Ютуб</a></li>
+          <li>
+            <a class="social__link-twitter" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Твитер</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__link-facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li>
+            <a class="social__link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
         </ul>
         <address>
           <a href="tel:+78128121212">+7 (812) 812-12-12</a>
