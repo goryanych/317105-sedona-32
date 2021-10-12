@@ -56,11 +56,14 @@ body {
 }
 
 .button {
+  font: inherit;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   color: var(--basic-white);
+
+  border: none;
 }
 
 /* Header */
@@ -121,4 +124,23 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+/* Section Search */
+.search { text-align: center; }
+
+.search__title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search__desc {
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--basic-dark);
+}
+
+.search__btn {
+  background-color: var(--special-warm-light);
 }
