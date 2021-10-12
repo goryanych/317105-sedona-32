@@ -47,6 +47,8 @@ html { box-sizing: border-box; }
 *::after { box-sizing: inherit; }
 
 body {
+  margin: 0;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -81,4 +83,42 @@ body {
 
 .user-menu__link {
   background-color: var(--special-warm-light);
+}
+
+/* Main */
+
+.page-main__desc {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-main__sub-desc {
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--basic-dark);
+}
+
+/* Section About */
+
+.about__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about__item {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.about__title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
