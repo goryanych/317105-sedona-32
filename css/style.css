@@ -14,3 +14,49 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-dark: #333333;
+  --basic-gray: #e6e6e6;
+  --basic-light: #f2f2f2;
+  --basic-white: #ffffff;
+
+  /* status */
+  --status-success: #7db550;
+  --status-warning: #fd922e;
+  --status-error: #ff5757;
+
+  /* special */
+  --special-cold-dark: #68a2ca;
+  --special-cold-light: #83b3d3;
+  --special-cold-light-12: rgba(131, 179, 211, 0.12);
+  --special-cold-light-20: rgba(131, 179, 211, 0.2);
+  --special-neutral-dark: #6c9e42;
+  --special-neutral-light: #7db54f;
+  --special-warm-dark: #615048;
+  --special-warm-light: #756257;
+}
+
+/* Basic styles */
+html { box-sizing: border-box; }
+
+*,
+*::before,
+*::after { box-sizing: inherit; }
+
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.button {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-white);
+}
