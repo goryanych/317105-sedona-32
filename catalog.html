@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -11,13 +12,13 @@
   <header class="page-header">
     <nav class="page-header__nav page-nav">
       <ul class="page-nav__list">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#about">О Седоне</a></li>
-        <li><a>Гостинницы</a></li>
+        <li><a class="page-nav__link" href="index.html">Главная</a></li>
+        <li><a class="page-nav__link" href="#about">О Седоне</a></li>
+        <li><a class="page-nav__link">Гостинницы</a></li>
       </ul>
     </nav>
     <a class="page-header__logo page-logo" href="index.html">
-        <img src="img/svg/logo.svg" width="138" height="70" alt="Логотип Седона">
+      <img src="img/svg/logo.svg" width="138" height="70" alt="Логотип Седона">
     </a>
     <div class="page-header__menu user-menu">
       <form class="user-menu__form" action="https://echo.htmlacademy.ru/">
@@ -29,7 +30,7 @@
       <button class="user-menu__favorites" type="button">
         <span class="favorites visually-hidden">Добавить в избранное</span>
       </button>
-      <a class="user-menu__link" href="#">Хочу сюда!</a>
+      <a class="user-menu__link button" href="#">Хочу сюда!</a>
     </div>
   </header>
 
@@ -253,22 +254,34 @@
   <!-- Footer -->
   <footer class="page-footer">
     <section class="subscribe">
-      <h2>Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subscribe__form" action="https://echo.htmlacademy.ru/">
-        <input type="search" name="search" placeholder="Ваш e-mail" required>
-        <button type="submit">Подписаться</button>
+      <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+      <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscribe__form mail-form" action="https://echo.htmlacademy.ru/">
+        <input class="mail-form__input" type="search" name="search" placeholder="Ваш e-mail" required>
+        <button class="mail-form__btn button" type="submit">Подписаться</button>
       </form>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="contacts__list social__list">
-        <li><a href="https://twitter.com/htmlacademy_ru">Твитер</a></li>
-        <li><a href="https://www.facebook.com/htmlacademy">Фейсбук</a></li>
-        <li><a href="https://www.youtube.com/user/htmlacademyru">Ютуб</a></li>
+        <li>
+          <a class="social__link-twitter" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">Твитер</span>
+          </a>
+        </li>
+        <li>
+          <a class="social__link-facebook" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li>
+          <a class="social__link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
       </ul>
-      <address>
-        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <address class="contacts__phone address-phone">
+        <a class="address-phone__link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <a href="htmlacademy.ru">
         <img src="img/svg/footer-logo.svg" width="115" height="33" alt="Логотип HTML Academy">
