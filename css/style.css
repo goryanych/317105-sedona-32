@@ -157,8 +157,9 @@ body {
 /* Footer */
 
 /* Section Subscribe */
-.subscribe {
-  text-align: center;
+.subscribe { text-align: center; }
+
+.subscribe-bg {
   color: var(--basic-white);
 
   background-image: url("../img/jpg/subscribe-bg.jpg");
