@@ -90,6 +90,31 @@ body {
 
 /* Main */
 
+.inner-main {
+  background-image: url("../img/catalog/jpg/catalog-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.inner-main__title {
+  color: var(--basic-white);
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+
+  color: var(--basic-white);
+
+  list-style: none;
+}
+
+.breadcrumbs__link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .page-main__desc {
   font-weight: bold;
   font-size: 36px;
