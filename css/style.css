@@ -278,6 +278,30 @@ body {
 
 .catalog__btn { background-color: var(--special-cold-light); }
 
+/* Pagination */
+.pagination__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination__link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--basic-white);
+
+  background-color: var(--special-cold-light);
+}
+
+.pagination__link--current {
+  color: var(--basic-black);
+
+  background-color: transparent;
+}
+
 /* Section Search */
 .search { text-align: center; }
 
