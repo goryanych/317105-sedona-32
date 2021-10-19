@@ -302,6 +302,21 @@ body {
   background-color: transparent;
 }
 
+.pagination__label {
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--basic-dark);
+}
+
+.pagination__options {
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--basic-dark);
+
+  border: 2px solid var(--basic-gray);
+  border-radius: 4px;
+}
+
 /* Section Search */
 .search { text-align: center; }
 
