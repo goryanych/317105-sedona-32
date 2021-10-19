@@ -214,6 +214,30 @@ body {
   border: none;
 }
 
+/* Sorting */
+.sortin__label {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sorting__options {
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--basic-dark);
+
+  border: 2px solid var(--basic-gray);
+  border-radius: 4px;
+}
+
+.sorting-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 /* Section Search */
 .search { text-align: center; }
 
