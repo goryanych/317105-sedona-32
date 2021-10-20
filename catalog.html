@@ -36,84 +36,86 @@
 
   <!-- Main -->
   <main class="inner-main">
-    <h1 class="inner-main__title">Гостиницы Седоны</h1>
+    <div class="filter-wrapper">
+      <h1 class="inner-main__title">Гостиницы Седоны</h1>
 
-    <!-- Breadcrumbs -->
-    <section class="breadcrumbs">
-      <h2 class="visually-hidden">Навигационная цепочка</h2>
-      <ul class="breadcrumbs__list">
-        <li>
-          <a class="breadcrumbs__link" href="index.html">
-            <span class="visually-hidden">Главная</span>
-          </a>
-        </li>
-        <li>Гостиницы</li>
-      </ul>
-    </section>
+      <!-- Breadcrumbs -->
+      <section class="breadcrumbs">
+        <h2 class="visually-hidden">Навигационная цепочка</h2>
+        <ul class="breadcrumbs__list">
+          <li>
+            <a class="breadcrumbs__link" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li>Гостиницы</li>
+        </ul>
+      </section>
 
-    <!-- Filters -->
-    <section class="filter">
-      <h2 class="visually-hidden">Фильтры поиска</h2>
-      <form class="filter__form" action="https://echo.htmlacademy.ru/">
-        <fieldset class="filter__group">
-          <legend class="filter__title">Инфраструктура:</legend>
-          <ul class="filter__list">
-            <li>
-              <input type="checkbox" name="pool" value="pool" id="pool" checked>
-              <label for="pool">Бассейн</label>
-            </li>
-            <li>
-              <input type="checkbox" name="parking" value="parking" id="parking" checked>
-              <label for="parking">Парковка</label>
-            </li>
-            <li>
-              <input type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi">
-              <label for="wi-fi">Wi-Fi</label>
-            </li>
-          </ul>
-        </fieldset>
+      <!-- Filters -->
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтры поиска</h2>
+        <form class="filter__form" action="https://echo.htmlacademy.ru/">
+          <fieldset class="filter__group">
+            <legend class="filter__title">Инфраструктура:</legend>
+            <ul class="filter__list">
+              <li>
+                <input type="checkbox" name="pool" value="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" value="parking" id="parking" checked>
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="filter__group">
-          <legend class="filter__title">Тип жилья:</legend>
-          <ul class="filter__list">
-            <li>
-              <input type="radio" name="housing-type" value="hotel" id="hotel" checked>
-              <label for="hotel">Гостиница</label>
-            </li>
-            <li>
-              <input type="radio" name="housing-type" value="motel" id="motel">
-              <label for="motel">Мотель</label>
-            </li>
-            <li>
-              <input type="radio" name="housing-type" value="apartments" id="apartments">
-              <label for="apartments">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="filter__group">
+            <legend class="filter__title">Тип жилья:</legend>
+            <ul class="filter__list">
+              <li>
+                <input type="radio" name="housing-type" value="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="radio" name="housing-type" value="motel" id="motel">
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="radio" name="housing-type" value="apartments" id="apartments">
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="filter__group">
-          <legend class="filter__title">Стоимость, ₽:</legend>
-          <div class="filter__price price">
-            <label class="price__label" for="min-cost">От</label>
-            <input class="price__input" type="number" name="min-cost" id="min-cost" value="0">
+          <fieldset class="filter__group">
+            <legend class="filter__title">Стоимость, ₽:</legend>
+            <div class="filter__price price">
+              <label class="price__label" for="min-cost">От</label>
+              <input class="price__input" type="number" name="min-cost" id="min-cost" value="0">
 
-            <label class="price__label" for="max-cost">До</label>
-            <input class="price__input" type="number" name="max-cost" id="max-cost" value="9000">
+              <label class="price__label" for="max-cost">До</label>
+              <input class="price__input" type="number" name="max-cost" id="max-cost" value="9000">
 
-            <button type="button">
-              <span class="visually-hidden">Изменить минимальную стоимость</span>
-            </button>
-            <button type="button">
-              <span class="visually-hidden">Изменить максимальную стоимость</span>
-            </button>
-          </div>
-          <div>
-            <button class="filter__button filter__button--submit button" type="submit">Применить</button>
-            <button class="filter__button filter__button--reset" type="reset">Сбросить</button>
-          </div>
-        </fieldset>
-      </form>
-    </section>
+              <button type="button">
+                <span class="visually-hidden">Изменить минимальную стоимость</span>
+              </button>
+              <button type="button">
+                <span class="visually-hidden">Изменить максимальную стоимость</span>
+              </button>
+            </div>
+            <div>
+              <button class="filter__button filter__button--submit button" type="submit">Применить</button>
+              <button class="filter__button filter__button--reset" type="reset">Сбросить</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </div>
 
     <!-- Sorting -->
     <section class="sorting">
