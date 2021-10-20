@@ -102,7 +102,7 @@ body {
   color: var(--basic-dark);
 }
 
-.inner-main__wrapper {
+.filter-wrapper {
   background-color: var(--special-cold-light);
   background-image: url("../img/catalog/jpg/catalog-bg.jpg");
   background-repeat: no-repeat;
