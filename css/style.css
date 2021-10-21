@@ -355,7 +355,11 @@ body {
 }
 
 /* Section Search */
-.search { text-align: center; }
+.search {
+  margin: 0 auto;
+  width: 720px;
+  text-align: center;
+}
 
 .search__title {
   font-size: 30px;
