@@ -9,7 +9,7 @@
 <body>
 
   <!-- Header -->
-  <header class="page-header">
+  <header class="page-container page-header">
     <nav class="page-header__nav page-nav">
       <ul class="page-nav__list">
         <li><a class="page-nav__link">Главная</a></li>
@@ -21,15 +21,12 @@
       <img src="img/svg/logo.svg" width="138" height="70" alt="Логотип Седона">
     </a>
     <div class="page-header__menu user-menu">
-      <form class="user-menu__form" action="https://echo.htmlacademy.ru/">
-        <input type="search" name="search" required>
-        <button type="submit">
-          <span class="visually-hidden">Поиск</span>
-        </button>
-      </form>
-      <button class="user-menu__favorites" type="button">
-        <span class="favorites visually-hidden">Добавить в избранное</span>
-      </button>
+      <a class="user-menu__search" href="#">
+        <span class="visually-hidden">Поиск</span>
+      </a>
+      <a class="user-menu__favorites" href="#">
+        <span class="visually-hidden">Добавить в избранное</span>
+      </a>
       <a class="user-menu__link button" href="#">Хочу сюда!</a>
     </div>
   </header>
