@@ -40,14 +40,21 @@
 }
 
 /* Basic styles */
-html { box-sizing: border-box; }
+html {
+  height: 100%;
+
+  box-sizing: border-box;
+}
 
 *,
 *::before,
 *::after { box-sizing: inherit; }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  min-height: 100%;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
@@ -64,6 +71,11 @@ body {
   color: var(--basic-white);
 
   border: none;
+}
+
+.page-container {
+
+  width: 1200px;
 }
 
 /* Header */
@@ -87,6 +99,7 @@ body {
 .user-menu__link { background-color: var(--special-warm-light); }
 
 /* Main */
+.main-container { flex-grow: 1; }
 .page-main__desc {
   font-weight: bold;
   font-size: 36px;
