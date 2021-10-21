@@ -33,11 +33,12 @@
 
   <!-- Main -->
   <main class="main-container page-container page-main">
-    <h1 class="visually-hidden">Сайт города Седона</h1>
+    <h1 class="visually-hidden" hidden>Сайт города Седона</h1>
     <img src="img/jpg/sedona.jpg" width="1200" height="485" alt="Изображение каньона Седона">
 
     <!-- Promo -->
     <section class="promo">
+      <h2 class="visually-hidden" hidden>О городке Седона</h2>
       <p class="promo__desc">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="promo__sub-desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
@@ -100,17 +101,17 @@
   </main>
 
   <!-- Footer -->
-  <footer class="page-footer">
+  <footer class="page-container page-footer">
     <section class="subscribe subscribe-bg">
       <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-      <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="subscribe__text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form class="subscribe__form mail-form" action="https://echo.htmlacademy.ru/">
         <input class="mail-form__input" type="search" name="search" placeholder="Ваш e-mail" required>
         <button class="mail-form__btn button" type="submit">Подписаться</button>
       </form>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
+      <h2 class="visually-hidden" hidden>Контакты</h2>
       <ul class="contacts__list social">
         <li>
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
@@ -131,7 +132,7 @@
       <address class="contacts__phone address-phone">
         <a class="address-phone__link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
-      <a href="htmlacademy.ru">
+      <a class="contacts__link" href="htmlacademy.ru">
         <img src="img/svg/footer-logo.svg" width="115" height="33" alt="Логотип HTML Academy">
       </a>
     </section>
