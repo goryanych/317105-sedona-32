@@ -119,15 +119,21 @@ body {
 /* Main */
 .main-container { flex-grow: 1; }
 
-.page-main__desc {
+/* Promo */
+.promo {
+  margin: 0 auto;
+  width: 720px;
+}
+
+.promo__desc {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.page-main__sub-desc {
+.promo__sub-desc {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
