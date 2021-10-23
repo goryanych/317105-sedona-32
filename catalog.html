@@ -9,11 +9,11 @@
 <body>
 
   <!-- Header -->
-  <header class="page-header">
+  <header class="page-container page-header">
     <nav class="page-header__nav page-nav">
       <ul class="page-nav__list">
         <li><a class="page-nav__link" href="index.html">Главная</a></li>
-        <li><a class="page-nav__link" href="#about">О Седоне</a></li>
+        <li><a class="page-nav__link" href="index.html#about">О Седоне</a></li>
         <li><a class="page-nav__link">Гостинницы</a></li>
       </ul>
     </nav>
@@ -21,21 +21,18 @@
       <img src="img/svg/logo.svg" width="138" height="70" alt="Логотип Седона">
     </a>
     <div class="page-header__menu user-menu">
-      <form class="user-menu__form" action="https://echo.htmlacademy.ru/">
-        <input type="search" name="search" required>
-        <button type="submit">
-          <span class="visually-hidden">Поиск</span>
-        </button>
-      </form>
-      <button class="user-menu__favorites" type="button">
-        <span class="favorites visually-hidden">Добавить в избранное</span>
-      </button>
+      <a class="user-menu__search" href="#">
+        <span class="visually-hidden">Поиск</span>
+      </a>
+      <a class="user-menu__favorites" href="#">
+        <span class="visually-hidden">Добавить в избранное</span>
+      </a>
       <a class="user-menu__link button" href="#">Хочу сюда!</a>
     </div>
   </header>
 
   <!-- Main -->
-  <main class="inner-main">
+  <main class="page-container inner-main">
     <div class="filter-wrapper">
       <h1 class="inner-main__title">Гостиницы Седоны</h1>
 
@@ -263,12 +260,13 @@
   </main>
 
   <!-- Footer -->
-  <footer class="page-footer">
+  <footer class="page-container page-footer">
     <section class="subscribe">
       <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
       <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe__form mail-form" action="https://echo.htmlacademy.ru/">
-        <input class="mail-form__input" type="search" name="search" placeholder="Ваш e-mail" required>
+        <label class="visually-hidden" for="email">Поле ввода Email</label>
+        <input class="mail-form__input" id="email" type="search" name="search" placeholder="Ваш e-mail" required>
         <button class="mail-form__btn button" type="submit">Подписаться</button>
       </form>
     </section>
@@ -294,7 +292,7 @@
       <address class="contacts__phone address-phone">
         <a class="address-phone__link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
-      <a href="htmlacademy.ru">
+      <a class="contacts__link" href="https://htmlacademy.ru">
         <img src="img/svg/footer-logo.svg" width="115" height="33" alt="Логотип HTML Academy">
       </a>
     </section>
