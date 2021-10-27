@@ -74,7 +74,7 @@ body {
   border: none;
 }
 
-.page-container { width: 1200px; }
+.container { width: 1200px; }
 
 /* Header */
 
@@ -85,17 +85,13 @@ body {
   align-items: center;
 }
 
-.page-header__nav {
-  margin-left: 72px;
-  width: 309px;
-}
-
 .page-nav__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
   list-style: none;
 }
@@ -108,16 +104,24 @@ body {
   color: inherit;
 }
 
-.page-header__menu {
-  display: flex;
-  width: 250px;
-  margin-right: 72px;
-}
+.page-header__menu { display: flex; }
 
-.user-menu__link { background-color: var(--special-warm-light); }
+.user-menu__link--btn { background-color: var(--special-warm-light); }
 
 /* Main */
-.main-container { flex-grow: 1; }
+.page-main,
+.inner-main { flex-grow: 1; }
+
+
+/* Welcome */
+.welcome {
+  display: flex;
+  margin: auto;
+
+  background: var(--special-cold-dark);
+  background-image: url("../img/jpg/sedona.jpg");
+  background-repeat: no-repeat;
+}
 
 /* Promo */
 .promo {
@@ -147,8 +151,6 @@ body {
 }
 
 .inner-main__title {
-  margin-left: 72px;
-
   font-size: 60px;
 
   line-height: 78px;
@@ -159,8 +161,9 @@ body {
 .about__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
   list-style: none;
 }
@@ -197,15 +200,11 @@ body {
 }
 
 /* Breadcrumbs */
-.breadcrumbs {
-  margin-left: 72px;
-  margin-right: 72px;
-}
-
 .breadcrumbs__list {
   display: flex;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
   color: var(--basic-white);
 
@@ -218,11 +217,6 @@ body {
 }
 
 /* Filters */
-.filter {
-  margin-left: 72px;
-  margin-right: 72px;
-}
-
 .filter__form {
   display: flex;
 
@@ -249,8 +243,9 @@ body {
 }
 
 .filter__list {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
   font-size: 18px;
   line-height: 23px;
@@ -295,6 +290,17 @@ body {
 }
 
 /* Sorting */
+.sorting {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting__form {
+  display: flex;
+  justify-content: space-between;
+  width: 820px;
+}
+
 .sorting__label {
   font-size: 30px;
   line-height: 39px;
@@ -312,16 +318,19 @@ body {
 }
 
 .sorting-list {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  width: 160px;
 
   list-style: none;
 }
 
 /* Catalog */
 .product-list {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
   list-style: none;
 }
@@ -345,8 +354,9 @@ body {
 .product-list__link--selected { background-color: var(--special-neutral-light); }
 
 .rating__list {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
   list-style: none;
 }
@@ -360,8 +370,9 @@ body {
 
 /* Pagination */
 .pagination__list {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
   list-style: none;
 }
@@ -421,9 +432,7 @@ body {
 /* Footer */
 
 /* Section Subscribe */
-.subscribe {
-  text-align: center;
-}
+.subscribe { text-align: center; }
 
 .subscribe-bg {
   color: var(--basic-white);
@@ -475,14 +484,13 @@ body {
 .social {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   width: 107px;
 
   list-style: none;
 }
-
-.contacts__list { margin-left: 72px; }
 
 .social__link--twitter {
   background-image: url("../img/svg/twitter.svg");
@@ -507,5 +515,3 @@ body {
   color: inherit;
   text-decoration: none;
 }
-
-.contacts__link { margin-right: 72px; }
