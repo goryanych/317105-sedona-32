@@ -327,31 +327,23 @@ body {
 }
 
 /* Catalog */
-.product-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-
-  list-style: none;
-}
-
-.product-list__title {
+.catalog__title {
   font-size: 24px;
   line-height: 31px;
 }
 
-.product-list__desc {
+.catalog__desc {
   font-size: 18px;
   line-height: 23px;
 
   color: var(--basic-dark);
 }
 
-.product-list__link--details { background-color: var(--special-warm-light); }
+.catalog__link--details { background-color: var(--special-warm-light); }
 
-.product-list__link--favorites { background-color: var(--special-cold-light); }
+.catalog__link--favorites { background-color: var(--special-cold-light); }
 
-.product-list__link--selected { background-color: var(--special-neutral-light); }
+.catalog__link--selected { background-color: var(--special-neutral-light); }
 
 .rating__list {
   margin-top: 0;
