@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Игорь Кологривый](https://up.htmlacademy.ru/htmlcss/32/user/317105).
-* Наставник: [Сергей Скубида](https://htmlacademy.ru/profile/id1210299).
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
