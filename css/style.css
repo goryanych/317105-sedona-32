@@ -361,6 +361,11 @@ body {
 .catalog__btn { background-color: var(--special-cold-light); }
 
 /* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
 .pagination__list {
   margin-top: 0;
   margin-bottom: 0;
