@@ -69,6 +69,7 @@ body {
   color: var(--basic-white);
 
   border: none;
+  border-radius: 4px;
 }
 
 .container { width: 1200px; }
@@ -123,10 +124,24 @@ body {
 
 .page-header__menu {
   display: flex;
+  justify-content: space-between;
   margin-left: auto;
+  max-width: 300px;
 }
 
-.user-menu__link--btn { background-color: var(--special-warm-light); }
+.user-menu__link {
+  width: 18px;
+  height: 18px;
+  padding: 10px;
+}
+
+.user-menu__link--btn {
+  width: 160px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+
+  background-color: var(--special-warm-light);
+}
 
 /* Main */
 .page-main,
