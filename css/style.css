@@ -208,6 +208,8 @@ body {
 }
 
 /* Section About */
+.about { margin-bottom: 90px; }
+
 .about__list {
   display: flex;
   flex-wrap: wrap;
@@ -266,7 +268,7 @@ body {
   text-transform: uppercase;
 }
 
-.about__title { 
+.about__title {
   margin-right: auto;
   margin-left: auto;
   width: 171px;
@@ -522,12 +524,21 @@ body {
 }
 
 .search__desc {
+  margin-bottom: 60px;
+
   font-size: 22px;
   line-height: 26px;
   color: var(--basic-dark);
 }
 
-.search__btn { background-color: var(--special-warm-light); }
+.search__btn {
+  width: 575px;
+  padding-top: 13px;
+  padding-bottom: 17px;
+
+  background-color: var(--special-warm-light);
+  border-radius: 10px;
+}
 
 /* Footer */
 
