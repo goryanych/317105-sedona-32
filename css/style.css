@@ -172,11 +172,14 @@ body {
 
 /* Promo */
 .promo {
-  margin: 0 auto;
+  margin: 0 auto 79px;
   width: 720px;
 }
 
 .promo__desc {
+  margin-top: 0;
+  margin-bottom: 23px;
+
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
