@@ -122,6 +122,10 @@ body {
   color: inherit;
 }
 
+.page-logo { text-decoration: none; }
+
+.page-logo__img { display: block; }
+
 .page-header__menu {
   display: flex;
   justify-content: space-between;
@@ -133,6 +137,8 @@ body {
   width: 18px;
   height: 18px;
   padding: 10px;
+
+  text-decoration: none;
 }
 
 .user-menu__link--btn {
@@ -153,6 +159,11 @@ body {
   background: var(--special-cold-dark);
   background-image: url("../img/jpg/sedona.jpg");
   background-repeat: no-repeat;
+}
+
+.welcome__pic {
+  display: flex;
+  margin: auto;
 }
 
 /* Promo */
@@ -416,6 +427,7 @@ body {
 .catalog__btn {
   display: block;
   margin: 0 auto;
+  width: 117px;
 
   background-color: var(--special-cold-light);
 }
