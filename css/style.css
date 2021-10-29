@@ -395,6 +395,9 @@ body {
 .sorting {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 45px;
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
 }
 
 .sorting__form {
@@ -420,12 +423,20 @@ body {
 }
 
 .sorting-list {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  width: 160px;
 
   list-style: none;
+}
+
+.sorting__link {
+  display: block;
+  padding: 17px 16px;
+  min-width: 16px;
+  min-height: 14px;
 }
 
 /* Catalog */
