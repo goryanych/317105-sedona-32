@@ -195,14 +195,21 @@ body {
 }
 
 .filter-wrapper {
+  margin-bottom: 45px;
+  padding-top: 40px;
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+
   background-color: var(--special-cold-light);
   background-image: url("../img/catalog/jpg/catalog-bg.jpg");
   background-repeat: no-repeat;
 }
 
 .inner-main__title {
-  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
 
+  font-size: 60px;
   line-height: 78px;
   color: var(--basic-white);
 }
@@ -293,6 +300,8 @@ body {
 .service__item:nth-child(odd) { background-color: var(--special-cold-light-12); }
 
 /* Breadcrumbs */
+.breadcrumbs { margin-bottom: 45px; }
+
 .breadcrumbs__list {
   display: flex;
   margin-top: 0;
