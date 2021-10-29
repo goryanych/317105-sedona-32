@@ -17,6 +17,8 @@
 
 /* Variables */
 :root {
+
+/* Color */
   --basic-black: #000000;
   --basic-dark: #333333;
   --basic-gray: #e6e6e6;
@@ -37,6 +39,9 @@
   --special-neutral-light: #7db54f;
   --special-warm-dark: #615048;
   --special-warm-light: #756257;
+
+/* Value */
+  --container-padding: 72px;
 }
 
 /* Basic styles */
@@ -68,13 +73,30 @@ body {
 
 .container { width: 1200px; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Header */
 
-  /* Nav */
 .page-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+}
+
+/* Nav */
+.page-header__nav {
+  margin-right: 150px;
+  max-width: 460px;
 }
 
 .page-nav__list {
@@ -89,6 +111,9 @@ body {
 }
 
 .page-nav__link {
+  display: block;
+  padding: 6px 12px;
+
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
@@ -96,7 +121,10 @@ body {
   color: inherit;
 }
 
-.page-header__menu { display: flex; }
+.page-header__menu {
+  display: flex;
+  margin-left: auto;
+}
 
 .user-menu__link--btn { background-color: var(--special-warm-light); }
 
@@ -107,9 +135,6 @@ body {
 
 /* Welcome */
 .welcome {
-  display: flex;
-  margin: auto;
-
   background: var(--special-cold-dark);
   background-image: url("../img/jpg/sedona.jpg");
   background-repeat: no-repeat;
