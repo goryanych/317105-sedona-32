@@ -156,6 +156,10 @@ body {
 
 /* Welcome */
 .welcome {
+  margin-bottom: 63px;
+  padding-top: 51px;
+  padding-bottom: 82px;
+
   background: var(--special-cold-dark);
   background-image: url("../img/jpg/sedona.jpg");
   background-repeat: no-repeat;
