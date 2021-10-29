@@ -541,9 +541,15 @@ body {
 }
 
 /* Footer */
+.page-footer { margin-top: 91px; }
 
 /* Section Subscribe */
-.subscribe { text-align: center; }
+.subscribe {
+  padding-top: 94px;
+  padding-bottom: 89px;
+
+  text-align: center;
+}
 
 .subscribe-bg {
   color: var(--basic-white);
@@ -554,22 +560,32 @@ body {
 }
 
 .subscribe__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .subscribe__text {
+  margin-bottom: 45px;
+
   font-size: 22px;
   line-height: 26px;
 }
 
-.mail-form {
+.subscribe__form {
+  display: flex;
+
   margin: 0 auto;
   width: 800px;
 }
 
 .mail-form__input {
+  flex-grow: 1;
+  padding: 22px;
+
   font: inherit;
   border: none;
 }
@@ -584,19 +600,31 @@ body {
   opacity: 0.6;
 }
 
-.mail-form__btn { background-color: var(--special-cold-light); }
+.mail-form__btn {
+  padding: 22px;
+  width: 200px;
+
+  background-color: var(--special-cold-light);
+}
 
 /* Section Contacts */
 .contacts {
   display: flex;
   justify-content: space-between;
+  padding: 40px var(--container-padding);
 }
 
 .social {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 
   list-style: none;
+}
+
+.social__link {
+  width: 20px;
+  height: 20px;
 }
 
 .social__link--twitter {
