@@ -72,7 +72,12 @@ body {
   border-radius: 4px;
 }
 
-.container { width: 1200px; }
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 1200px;
+}
 
 .visually-hidden {
   position: absolute;
