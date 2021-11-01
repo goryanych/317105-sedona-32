@@ -94,11 +94,14 @@
             <fieldset class="filter__group">
               <legend class="filter__title">Стоимость, ₽:</legend>
               <div class="filter__price price">
-                <label class="price__label" for="min-cost">От</label>
-                <input class="price__input" type="number" name="min-cost" id="min-cost" value="0">
-
-                <label class="price__label" for="max-cost">До</label>
-                <input class="price__input" type="number" name="max-cost" id="max-cost" value="9000">
+                <div class="price__wrap price__wrap--min">
+                  <label class="price__label" for="min-cost">От</label>
+                  <input class="price__input" type="number" name="min-cost" id="min-cost" value="0">
+                </div>
+                <div class="price__wrap price__wrap--max">
+                  <label class="price__label" for="max-cost">До</label>
+                  <input class="price__input" type="number" name="max-cost" id="max-cost" value="9000">
+                </div>
 
                 <button type="button">
                   <span class="visually-hidden">Изменить минимальную стоимость</span>
