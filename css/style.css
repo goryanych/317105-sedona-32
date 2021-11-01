@@ -339,6 +339,8 @@ body {
 .filter__group:nth-child(1) { margin-right: 67px; }
 
 .filter__group:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
   margin-left: auto;
   width: 530px;
 }
@@ -360,6 +362,13 @@ body {
   list-style: none;
 }
 
+.filter__button { display: block; }
+
+.filter__price {
+  display: grid;
+  grid-template-columns: 143px 144px;
+}
+
 .price__label {
   font-size: 18px;
   line-height: 23px;
@@ -369,11 +378,14 @@ body {
 }
 
 .price__input {
+  width: 143px;
+
   font: inherit;
   color: var(--basic-white);
 
   background-color: transparent;
   border: 2px solid var(--basic-white);
+  box-sizing: border-box;
 }
 
 .price__input:first-of-type {
