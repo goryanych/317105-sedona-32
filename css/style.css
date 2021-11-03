@@ -200,7 +200,7 @@ body {
 
 /* Welcome */
 .welcome {
-  margin-bottom: 63px;
+  margin-bottom: 61px;
   padding-top: 51px;
   padding-bottom: 82px;
 
@@ -222,7 +222,7 @@ body {
 
 .promo__desc {
   margin-top: 0;
-  margin-bottom: 23px;
+  margin-bottom: 34px;
 
   font-weight: bold;
   font-size: 30px;
