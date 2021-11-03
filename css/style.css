@@ -737,7 +737,7 @@ body {
 /* Section Subscribe */
 .subscribe {
   padding-top: 94px;
-  padding-bottom: 89px;
+  padding-bottom: 94px;
 
   text-align: center;
 }
@@ -775,10 +775,12 @@ body {
 
 .mail-form__input {
   flex-grow: 1;
-  padding: 22px;
+  padding: 21px 21px 18px;
 
   font: inherit;
   border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .mail-form__input::placeholder {
@@ -792,10 +794,13 @@ body {
 }
 
 .mail-form__btn {
-  padding: 22px;
   width: 200px;
 
+  font-size: 20px;
+  line-height: 26px;
+
   background-color: var(--special-cold-light);
+  border-radius: 0 10px 10px 0;
 }
 
 /* Section Contacts */
