@@ -805,26 +805,25 @@ body {
 /* Section Contacts */
 .contacts {
   display: flex;
-  padding: 38px 72px 38px 64px;
+  padding: 38px 72px 38px 61px;
 }
 
 .social {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-right: 239px;
+  margin-right: 241px;
   max-width: 150px;
 
   list-style: none;
 }
 
 .social__link {
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
-  min-width: 34px;
-  min-height: 34px; */
+  margin-right: 4px;
+
   text-decoration: none;
 }
 
@@ -845,6 +844,12 @@ body {
   min-width: 20px;
   min-height: 16px;
 }
+
+.social__svg { fill: var(--special-cold-light); }
+
+.social__svg:hover { fill: var(--special-cold-dark); }
+
+.social__svg:active { opacity: .3; }
 
 .address-phone { font-style: normal; }
 
