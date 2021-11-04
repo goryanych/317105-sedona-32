@@ -200,7 +200,7 @@ body {
 
 /* Welcome */
 .welcome {
-  margin-bottom: 64px;
+  margin-bottom: 61px;
   padding-top: 51px;
   padding-bottom: 82px;
 
@@ -222,7 +222,7 @@ body {
 
 .promo__desc {
   margin-top: 0;
-  margin-bottom: 31px;
+  margin-bottom: 34px;
 
   font-weight: bold;
   font-size: 30px;
@@ -325,7 +325,7 @@ body {
   width: 171px;
 }
 
-.about__num { margin-bottom: 31px; }
+.about__num { margin-bottom: 29px; }
 
 .about__desc {
   margin: 0 auto;
@@ -711,8 +711,7 @@ body {
 }
 
 .search__desc {
-  margin: 0 auto 58px;
-  width: 580px;
+  margin: 0 auto 60px;
 
   font-size: 22px;
   line-height: 26px;
@@ -736,7 +735,7 @@ body {
 
 /* Section Subscribe */
 .subscribe {
-  padding-top: 94px;
+  padding-top: 92px;
   padding-bottom: 94px;
 
   text-align: center;
@@ -760,7 +759,7 @@ body {
 }
 
 .subscribe__text {
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 
   font-size: 22px;
   line-height: 26px;
@@ -806,36 +805,45 @@ body {
 /* Section Contacts */
 .contacts {
   display: flex;
-  justify-content: space-between;
-  padding: 40px var(--container-padding);
+  padding: 38px 72px 38px 64px;
 }
 
 .social {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-right: 239px;
+  max-width: 150px;
 
   list-style: none;
 }
 
 .social__link {
-  width: 20px;
-  height: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  min-width: 34px;
+  min-height: 34px; */
+  text-decoration: none;
 }
 
 .social__link--twitter {
-  background-image: url("../img/svg/twitter.svg");
-  background-repeat: no-repeat;
+  padding: 12px 11px;
+  min-width: 18px;
+  min-height: 15px;
 }
 
 .social__link--facebook {
-  background-image: url("../img/svg/facebook.svg");
-  background-repeat: no-repeat;
+  padding: 11px 15px;
+  min-width: 10px;
+  min-height: 18px;
 }
 
 .social__link--youtube {
-  background-image: url("../img/svg/youtube.svg");
-  background-repeat: no-repeat;
+  padding: 12px 10px;
+  min-width: 20px;
+  min-height: 16px;
 }
 
 .address-phone { font-style: normal; }
@@ -845,4 +853,9 @@ body {
   line-height: 40px;
   color: inherit;
   text-decoration: none;
+}
+
+.contacts__link {
+  margin-left: auto;
+  align-self: flex-end;
 }
