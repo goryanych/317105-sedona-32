@@ -209,9 +209,9 @@ body {
 .user-menu__link:active .menu-link__content { color: rgba(255, 255, 255, 0.3); }
 
 .user-menu__link--btn {
-  margin-left: 24px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  margin-left: 23px;
+  padding-top: 9px;
+  padding-bottom: 7px;
   width: 140px;
 
   background-color: var(--special-warm-light);
@@ -754,7 +754,7 @@ body {
 }
 
 .search__title {
-  margin-bottom: 29px;
+  margin-bottom: 31px;
 
   font-size: 30px;
   line-height: 36px;
@@ -762,11 +762,16 @@ body {
 }
 
 .search__desc {
-  margin: 0 auto 60px;
+  margin: 0 auto 58px;
 
   font-size: 22px;
   line-height: 26px;
   color: var(--basic-dark);
+}
+
+.search-desc__item {
+  display: inline-block;
+  margin-left: -17px;
 }
 
 .search__btn {
@@ -787,7 +792,7 @@ body {
 .search__btn:active { color: rgba(255, 255, 255, 0.3); }
 
 /* Footer */
-.page-footer { margin-top: 91px; }
+.page-footer { margin-top: 92px; }
 
 /* Section Subscribe */
 .subscribe {
@@ -830,7 +835,7 @@ body {
 
 .mail-form__input {
   flex-grow: 1;
-  padding: 21px 21px 18px;
+  padding: 19px 21px 19px;
 
   font: inherit;
 
