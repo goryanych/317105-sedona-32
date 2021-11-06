@@ -70,6 +70,8 @@ body {
 
   border: none;
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
 .container {
@@ -777,6 +779,8 @@ body {
   padding: 21px 21px 18px;
 
   font: inherit;
+
+  background-color: var(--basic-light);
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -792,6 +796,14 @@ body {
   opacity: 0.6;
 }
 
+.mail-form__input:hover { background-color: var(--basic-gray); }
+
+.mail-form__input:focus {
+  background-color: var(--basic-gray);
+
+  outline: 3px solid var(--special-cold-light);
+}
+
 .mail-form__btn {
   width: 200px;
 
@@ -800,8 +812,6 @@ body {
 
   background-color: var(--special-cold-light);
   border-radius: 0 10px 10px 0;
-
-  cursor: pointer;
 }
 
 .mail-form__btn:hover { background-color: var(--special-cold-dark); }
