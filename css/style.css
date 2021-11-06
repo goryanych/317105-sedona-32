@@ -74,6 +74,8 @@ body {
   cursor: pointer;
 }
 
+.button:focus { outline: 3px solid var(--special-cold-light); }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -220,11 +222,7 @@ body {
   background-color: var(--special-warm-dark);
 }
 
-.user-menu__link--btn:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  border-radius: 4px;
-}
+.user-menu__link--btn:active { color: rgba(255, 255, 255, 0.3); }
 
 .menu-link__content {
   position: absolute;
@@ -782,6 +780,11 @@ body {
   border-radius: 10px;
 }
 
+.search__btn:hover,
+.search__btn:focus { background-color: var(--special-warm-dark); }
+
+.search__btn:active { color: rgba(255, 255, 255, 0.3); }
+
 /* Footer */
 .page-footer { margin-top: 91px; }
 
@@ -869,11 +872,7 @@ body {
 .mail-form__btn:focus {
   background-color: var(--special-cold-dark);
 
-  border-top-left-radius: 0;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 0;
-  outline: 3px solid var(--special-warm-light);
+  outline-color: var(--special-warm-light);
 }
 
 .mail-form__btn:active { color: rgba(255, 255, 255, 0.3); }
