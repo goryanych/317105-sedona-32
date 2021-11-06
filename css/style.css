@@ -172,6 +172,7 @@ body {
 .page-header__menu {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin-left: auto;
   padding-top: 14px;
   width: 273px;
