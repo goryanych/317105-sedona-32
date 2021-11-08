@@ -42,9 +42,16 @@
   --special-white-30: rgba(255, 255, 255, 0.3);
 
 /* Value */
-  --container-padding: 59px;
+  /* Box model */
+  --container-padding-user: 59px;
+  --container-padding-model: 72px;
+  --border-radius-small: 4px;
+  --border-radius-middle: 4px;
+  --border-radius-large: 4px;
 
   --outline-focus: 3px solid var(--special-cold-light);
+  --outline-active: 2px solid var(--basic-black);
+  --outline-error: 2px solid var(--status-error);
 }
 
 /* Basic styles */
@@ -72,7 +79,7 @@ body {
   color: var(--basic-white);
 
   border: none;
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
 
   cursor: pointer;
 }
@@ -104,8 +111,8 @@ body {
 
   display: flex;
   margin-bottom: -5px;
-  padding-right: var(--container-padding);
-  padding-left: var(--container-padding);
+  padding-right: var(--container-padding-user);
+  padding-left: var(--container-padding-user);
 }
 
 /* Nav */
@@ -147,7 +154,7 @@ body {
 .page-nav__link:focus-visible {
   color: var(--special-warm-light);
 
-  border-radius: 6px;
+  border-radius: var(--border-radius-middle);
 
   outline: var(--outline-focus);
 }
@@ -173,7 +180,7 @@ body {
 .page-logo { text-decoration: none; }
 
 .page-logo:focus-visible {
-  border-radius: 6px;
+  border-radius: var(--border-radius-middle);
   outline: var(--outline-focus);
 }
 
@@ -207,7 +214,7 @@ body {
 .user-menu__link:focus .user-menu__svg { fill: var(--special-warm-light); }
 
 .user-menu__link:focus-visible {
-  border-radius: 6px;
+  border-radius: var(--border-radius-middle);
 
   outline: var(--outline-focus);
 }
@@ -216,7 +223,7 @@ body {
 
 .user-menu__link:active { outline: none; }
 
-.user-menu__link:active .menu-link__content { color: var(--special-white-30); }
+.user-menu__link:active .user-menu__counter { color: var(--special-white-30); }
 
 .user-menu__link--btn {
   margin-left: 23px;
@@ -229,13 +236,13 @@ body {
 
 .user-menu__link--btn:hover,
 .user-menu__link--btn:focus {
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   background-color: var(--special-warm-dark);
 }
 
 .user-menu__link--btn:active { color: var(--special-white-30); }
 
-.menu-link__content {
+.user-menu__counter {
   position: absolute;
   top: 0;
   right: -4px;
@@ -302,8 +309,8 @@ body {
 .filter-wrapper {
   margin-bottom: 45px;
   padding-top: 40px;
-  padding-right: var(--container-padding);
-  padding-left: var(--container-padding);
+  padding-right: var(--container-padding-user);
+  padding-left: var(--container-padding-user);
 
   background-color: var(--special-cold-light);
   background-image: url("../img/catalog/jpg/catalog-bg.jpg");
@@ -552,14 +559,14 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 45px;
-  padding-right: 72px;
-  padding-left: 71px;
+  padding-right: var(--container-padding-model);
+  padding-left: calc(var(--container-padding-model) - 1);
 }
 
 .sorting__form {
   display: flex;
   justify-content: space-between;
-  width: 820px;
+  width: 815px;
 }
 
 .sorting__label {
@@ -577,8 +584,11 @@ body {
   color: var(--basic-dark);
 
   background-color: transparent;
+  background-image: url("../img/catalog/svg/arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center right 19px;
   border: 2px solid var(--basic-gray);
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
 
   appearance: none;
 }
@@ -604,7 +614,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid var(--basic-gray);
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
 }
 
 .sorting__link--tile { background-image: url("../img/catalog/svg/mode-tile.svg"); }
@@ -616,8 +626,8 @@ body {
 /* Catalog */
 .catalog {
   margin-bottom: 30px;
-  padding-right: 71px;
-  padding-left: 72px;
+  padding-right: calc(var(--container-padding-model) - 1);
+  padding-left: var(--container-padding-model);
   padding-bottom: 30px;
 }
 
@@ -709,14 +719,14 @@ body {
   text-transform: uppercase;
 
   background-color: var(--basic-light);
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
 }
 
 .catalog__btn {
   display: block;
   margin: 0 auto 30px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 15px;
+  padding-bottom: 14px;
   width: 625px;
 
   font-size: 20px;
@@ -730,8 +740,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: var(--container-padding);
-  padding-left: var(--container-padding);
+  padding-right: var(--container-padding-user);
+  padding-left: var(--container-padding-user);
 }
 
 .pagination__list {
@@ -760,7 +770,7 @@ body {
   color: var(--basic-white);
 
   background-color: var(--special-cold-light);
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   box-sizing: border-box;
 }
 
@@ -790,7 +800,7 @@ body {
   color: var(--basic-dark);
 
   border: 2px solid var(--basic-gray);
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
 }
 
 /* Section Search */
@@ -828,7 +838,7 @@ body {
   line-height: 36px;
 
   background-color: var(--special-warm-light);
-  border-radius: 10px;
+  border-radius: var(--border-radius-large);
 }
 
 .search__btn:hover,
@@ -908,6 +918,18 @@ body {
   outline: var(--outline-focus);
 }
 
+.mail-form__input:focus:valid {
+  background-color: var(--basic-white);
+
+  outline: var(--outline-active);
+}
+
+.mail-form__input:focus:invalid {
+  background-color: var(--basic-white);
+
+  outline: var(--outline-error);
+}
+
 .mail-form__btn {
   width: 200px;
 
@@ -915,7 +937,7 @@ body {
   line-height: 26px;
 
   background-color: var(--special-cold-light);
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 var(--border-radius-large) var(--border-radius-large) 0;
 }
 
 .mail-form__btn:hover { background-color: var(--special-cold-dark); }
@@ -966,7 +988,7 @@ body {
 .social__svg:hover { fill: var(--special-cold-dark); }
 
 .social__link:focus-visible {
-  border-radius: 6px;
+  border-radius: var(--border-radius-middle);
   outline: var(--outline-focus);
 }
 
@@ -993,7 +1015,7 @@ body {
 .address-phone__link:focus-visible {
   color:var(--special-warm-light);
 
-  border-radius: 6px;
+  border-radius: var(--border-radius-middle);
   outline: var(--outline-focus);
 }
 
@@ -1015,7 +1037,7 @@ body {
 .contacts__link:focus .contacts__svg { fill: var(--special-warm-light); }
 
 .contacts__link:focus-visible {
-  border-radius: 6px;
+  border-radius: var(--border-radius-middle);
   outline: 3px solid var(--special-cold-light);
 }
 
