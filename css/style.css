@@ -49,7 +49,8 @@
   --border-radius-middle: 6px;
   --border-radius-large: 10px;
 
-  --outline-focus: 3px solid var(--special-cold-light);
+  --outline-focus-cold: 3px solid var(--special-cold-light);
+  --outline-focus-warm: 3px solid var(--special-warm-light);
   --outline-active: 2px solid var(--basic-black);
   --outline-error: 2px solid var(--status-error);
 }
@@ -81,7 +82,7 @@ body {
   cursor: pointer;
 }
 
-.button:focus-visible { outline: var(--outline-focus); }
+.button:focus-visible { outline: var(--outline-focus-cold); }
 
 .container {
   display: flex;
@@ -156,7 +157,7 @@ body {
 
   border-radius: var(--border-radius-middle);
 
-  outline: var(--outline-focus);
+  outline: var(--outline-focus-cold);
 }
 
 .page-nav__link:active:not(.page-nav__link--current) {
@@ -181,7 +182,7 @@ body {
 
 .page-logo:focus-visible {
   border-radius: var(--border-radius-middle);
-  outline: var(--outline-focus);
+  outline: var(--outline-focus-cold);
 }
 
 .page-logo__img { display: block; }
@@ -216,7 +217,7 @@ body {
 .user-menu__link:focus-visible {
   border-radius: var(--border-radius-middle);
 
-  outline: var(--outline-focus);
+  outline: var(--outline-focus-cold);
 }
 
 .user-menu__link:active .user-menu__svg { opacity: 0.3; }
@@ -307,9 +308,7 @@ body {
 
 .filter-wrapper {
   margin-bottom: 45px;
-  padding-top: 35px;
-  padding-right: var(--container-padding-model);
-  padding-left: calc(var(--container-padding-model) - 1px);
+  padding: 32px var(--container-padding-model) 82px calc(var(--container-padding-model) - 2px);
 
   background-color: var(--special-cold-light);
   background-image: url("../img/catalog/jpg/catalog-bg.jpg");
@@ -318,7 +317,7 @@ body {
 
 .inner-main__title {
   margin-top: 0;
-  margin-bottom: -9px;
+  margin-bottom: -6px;
 
   font-size: 60px;
   line-height: 78px;
@@ -441,7 +440,7 @@ body {
 }
 
 /* Breadcrumbs */
-.breadcrumbs { margin-bottom: 45px; }
+.breadcrumbs { margin-bottom: 42px; }
 
 .breadcrumbs__list {
   display: flex;
@@ -499,15 +498,16 @@ body {
 .breadcrumbs__link:focus-visible {
   border-radius: var(--border-radius-small);
 
-  outline: var(--outline-focus);
+  outline: var(--outline-focus-cold);
 }
 
 .breadcrumbs__link:active { opacity: 0.3; }
 
 /* Filters */
 .filter__form {
-  display: flex;
-
+  display: grid;
+  grid-template-columns: 215px 215px 97px 290px auto min-content;
+  grid-template-rows: min-content auto min-content;
   color: var(--basic-white);
 }
 
@@ -519,16 +519,15 @@ body {
   border: none;
 }
 
-.filter__group:nth-child(1) { margin-right: 67px; }
+.filter__group--infrastructure,
+.filter__group--type,
+.filter__group--price { grid-row: 1 / -1; }
 
-.filter__group:nth-child(3) {
-  display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  width: 530px;
-}
+.filter__group--price { grid-column: 4 / 5; }
 
 .filter__title {
+  margin-bottom: 30px;
+
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
@@ -545,14 +544,26 @@ body {
   list-style: none;
 }
 
-.filter__button { display: block; }
+.filter__item:not(:last-child) { margin-bottom: 13px; }
 
-.filter__price {
-  display: grid;
-  grid-template-columns: 143px 144px;
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price__title { margin-bottom: 35px; }
+
+.price__input-wrap {
+  position: relative;
+
+  display: flex;
+  margin-bottom: 28px;
+  padding-left: 3px;
 }
 
 .price__label {
+  position: absolute;
+
   font-size: 18px;
   line-height: 23px;
   text-transform: lowercase;
@@ -560,8 +571,19 @@ body {
   opacity: 0.3;
 }
 
+.price__label--min {
+  top: 11px;
+  right: 159px;
+}
+
+.price__label--max {
+  top: 11px;
+  right: 17px;
+}
+
 .price__input {
-  width: 143px;
+  padding: 12px 35px 11px 17px;
+  width: 144px;
 
   font: inherit;
   color: var(--basic-white);
@@ -570,6 +592,10 @@ body {
   border: 2px solid var(--basic-white);
   box-sizing: border-box;
 }
+
+.price__input--max { letter-spacing: 1px; }
+
+.price__input:last-child { margin-left: -2px; }
 
 .price__input:first-of-type {
   border-top-left-radius: 4px;
@@ -581,14 +607,78 @@ body {
   border-bottom-right-radius: 4px;
 }
 
-.filter__button--submit { background-color: var(--special-cold-light); }
+.price__scale {
+  position: relative;
 
-.filter__button--reset {
-  font: inherit;
+  margin-left: 3px;
+  height: 4px;
+
+  background-color: var(--special-white-30);
+}
+
+.price__range {
+  position: absolute;
+
+  width: 227px;
+  height: 4px;
+
+  background-color: var(--basic-white);
+}
+
+.price__btn {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: var(--basic-white);
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.price__btn--min {
+  top: -8px;
+  left: 0;
+}
+
+.price__btn--max {
+  top: -8px;
+  right: -8px;
+}
+
+.filter__btn-wrap {
+  grid-column: -1 / -2;
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 61px;
+}
+
+.filter__btn--submit {
+  grid-column: -1 / -2;
+  grid-row: 3 / 4;
+  margin-bottom: 18px;
+  padding: 13px 35px 14px;
+
+  background-color: var(--special-cold-light);
+}
+
+.filter__btn--reset {
+  grid-column: -1 / -2;
+  grid-row: -1 / -2;
+  padding: 1px 11px 2px 9px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23px;
   color: var(--basic-white);
 
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 /* Sorting */
@@ -696,6 +786,8 @@ body {
 
 .catalog-article__title-link  {
   grid-column: 3 / -2;
+  width: fit-content;
+
   color: inherit;
   text-decoration: none;
 }
@@ -950,7 +1042,7 @@ body {
 .mail-form__input:focus-visible {
   background-color: var(--basic-gray);
 
-  outline: var(--outline-focus);
+  outline: var(--outline-focus-cold);
 }
 
 .mail-form__input:focus:valid {
@@ -1024,7 +1116,7 @@ body {
 
 .social__link:focus-visible {
   border-radius: var(--border-radius-middle);
-  outline: var(--outline-focus);
+  outline: var(--outline-focus-cold);
 }
 
 .social__link:focus .social__svg { fill: var(--special-cold-dark); }
@@ -1051,7 +1143,7 @@ body {
   color:var(--special-warm-light);
 
   border-radius: var(--border-radius-middle);
-  outline: var(--outline-focus);
+  outline: var(--outline-focus-cold);
 }
 
 .address-phone__link:active {
@@ -1073,7 +1165,7 @@ body {
 
 .contacts__link:focus-visible {
   border-radius: var(--border-radius-middle);
-  outline: 3px solid var(--special-cold-light);
+  outline: var(--outline-focus-cold);
 }
 
 .contacts__link:active {
