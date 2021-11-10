@@ -63,7 +63,7 @@
               </a>
             </li>
             <li class="breadcrumbs__item">
-              <a href="#" class="breadcrumbs__link">Гостиницы</a>
+              <a class="breadcrumbs__link">Гостиницы</a>
             </li>
           </ul>
         </section>
@@ -140,9 +140,10 @@
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка Гостиниц</h2>
         <form class="sorting__form" action="https://echo.htmlacademy.ru/" >
-          <label class="sorting__label" for="sorting">
+          <h3 class="sorting__title">
             Найдено гостиниц: <span>38</span>
-          </label>
+          </h3>
+          <label class="visually-hidden" for="sorting">Сортировка по категориям</label>
           <select class="sorting__options" name="sorting" id="sorting">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
@@ -153,13 +154,19 @@
 
         <ul class="sorting-list">
           <li class="sorting__item">
-            <a class="sorting__link sorting__link--tile" href="#"><span class="visually-hidden">Показать карточками</span></a>
+            <a class="sorting__link sorting__link--tile" href="#">
+              <span class="visually-hidden">Показать карточками</span>
+            </a>
           </li>
           <li class="sorting__item">
-            <a class="sorting__link sorting__link--slideshow" href="#"><span class="visually-hidden">Показать как слайд</span></a>
+            <a class="sorting__link sorting__link--slideshow" href="#">
+              <span class="visually-hidden">Показать как слайд</span>
+            </a>
           </li>
           <li class="sorting__item">
-            <a class="sorting__link sorting__link--list" href="#"><span class="visually-hidden">Показать списоком</span></a>
+            <a class="sorting__link sorting__link--list" href="#">
+              <span class="visually-hidden">Показать списоком</span>
+            </a>
           </li>
         </ul>
       </section>
