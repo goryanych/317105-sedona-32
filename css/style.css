@@ -606,7 +606,10 @@ body {
   width: 815px;
 }
 
-.sorting__label {
+.sorting__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 30px;
   line-height: 39px;
   font-weight: bold;
