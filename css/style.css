@@ -87,6 +87,33 @@ body {
 
 .button:focus-visible { outline: var(--outline-focus-cold); }
 
+.button:active {
+  color: var(--basic-white-30);
+
+  outline: none;
+}
+
+/* button-warm */
+.button--warm:hover { background-color: var(--special-warm-dark); }
+
+/* button-cold */
+.button--cold:hover { background-color: var(--special-cold-dark); }
+
+.button--cold:focus-visible {
+  background-color: var(--special-cold-dark);
+
+  outline: var(--outline-focus-warm);
+}
+
+/* button-success */
+.button--success:hover { background-color: var(--special-neutral-dark); }
+
+.button--success:focus-visible {
+  background-color: var(--special-neutral-dark);
+
+  outline: var(--outline-focus-warm);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -235,14 +262,6 @@ body {
 
   background-color: var(--special-warm-light);
 }
-
-.user-menu__link--btn:hover,
-.user-menu__link--btn:focus {
-  border-radius: var(--border-radius-small);
-  background-color: var(--special-warm-dark);
-}
-
-.user-menu__link--btn:active { color: var(--basic-white-30); }
 
 .user-menu__counter {
   position: absolute;
@@ -775,19 +794,7 @@ body {
   background-color: var(--special-cold-light);
 }
 
-.filter__btn--submit:hover { background-color: var(--special-cold-dark); }
-
-.filter__btn--submit:focus-visible {
-  background-color: var(--special-cold-dark);
-
-  outline: 3px solid var(--basic-white);
-}
-
-.filter__btn--submit:active {
-  color: var(--basic-white-30);
-
-  background-color: var(--special-cold-dark);
-}
+.filter__btn--submit:focus-visible { outline: 3px solid var(--basic-white); }
 
 .filter__btn--reset {
   grid-column: -1 / -2;
@@ -1146,11 +1153,6 @@ body {
   border-radius: var(--border-radius-large);
 }
 
-.search__btn:hover,
-.search__btn:focus-visible { background-color: var(--special-warm-dark); }
-
-.search__btn:active { color: var(--basic-white-30); }
-
 /* Footer */
 .page-footer { margin-top: 92px; }
 
@@ -1241,16 +1243,6 @@ body {
   background-color: var(--special-cold-light);
   border-radius: 0 var(--border-radius-large) var(--border-radius-large) 0;
 }
-
-.mail-form__btn:hover { background-color: var(--special-cold-dark); }
-
-.mail-form__btn:focus-visible {
-  background-color: var(--special-cold-dark);
-
-  outline-color: var(--special-warm-light);
-}
-
-.mail-form__btn:active { color: var(--basic-white-30); }
 
 /* Section Contacts */
 .contacts {
