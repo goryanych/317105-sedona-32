@@ -1083,7 +1083,7 @@ body {
   list-style: none;
 }
 
-.pagination__item:not(:last-child) { margin-right: 7px; }
+.pagination__item:not(:last-child) { margin-right: 8px; }
 
 .pagination__link {
   display: inline-block;
@@ -1109,19 +1109,21 @@ body {
   background-color: var(--basic-light);
 }
 
-.pagination__form {
+.pagination__label {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 386px;
-}
 
-.pagination__label {
   font-size: 18px;
   line-height: 23px;
   color: var(--basic-dark);
 }
 
 .pagination__options {
+  padding: 10px;
   width: 160px;
 
   font-size: 18px;
@@ -1130,6 +1132,12 @@ body {
 
   border: 2px solid var(--basic-gray-light);
   border-radius: var(--border-radius-small);
+}
+
+.pagination__icon {
+  position: absolute;
+
+  content: "";
 }
 
 /* Section Search */
