@@ -937,10 +937,26 @@ body {
 
 /* Catalog */
 .catalog {
+  position: relative;
+
   margin-bottom: 30px;
   padding-right: calc(var(--container-padding-model) - 1px);
   padding-left: var(--container-padding-model);
   padding-bottom: 30px;
+
+  text-align: center;
+}
+
+.catalog::after {
+  position: absolute;
+  bottom: -1px;
+  left: 71px;
+  right: 72px;
+  content: "";
+
+  height: 1px;
+
+  background-color: var(--basic-gray-light);
 }
 
 .catalog__item {
@@ -999,34 +1015,34 @@ body {
 
 .catalog-article__link {
   grid-row: -1 / -2;
-  padding-top: 9px;
-  padding-bottom: 10px;
-  width: 160px;
+  justify-self: start;
+  padding: 8px 32px 10px 31px;
 }
 
 .catalog-article__link--details {
   grid-column: 3 / 4;
-  width: 151px;
 
   background-color: var(--special-warm-light);
 }
 
 .catalog-article__link--favorites {
   grid-column: 4 / 5;
+  padding-right: 29px;
 
   background-color: var(--special-cold-light);
 }
+
+.catalog-article__link--favorites-green { background-color: var(--special-neutral-light); }
 
 .catalog-article__link--selected { background-color: var(--special-neutral-light); }
 
 .catalog-article__rating {
   grid-column: -1 / -2;
   grid-row: -1 / -2;
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 9px;
-  padding-bottom: 10px;
-  width: 160px;
+  padding: 8px 33px 10px 32px;
 
   color: var(--basic-dark);
   text-align: center;
@@ -1036,12 +1052,11 @@ body {
   border-radius: var(--border-radius-small);
 }
 
+.article-rating__item { margin-left: 5px; }
+
 .catalog__btn {
-  display: block;
-  margin: 0 auto 30px;
-  padding-top: 15px;
-  padding-bottom: 14px;
-  width: 625px;
+  display: inline-block;
+  padding: 15px 240px 14px 241px;
 
   font-size: 20px;
   line-height: 26px;
@@ -1054,8 +1069,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: var(--container-padding-user);
-  padding-left: var(--container-padding-user);
+  padding-right: var(--container-padding-model);
+  padding-left: calc(var(--container-padding-model) - 1px);
 }
 
 .pagination__list {
@@ -1222,13 +1237,13 @@ body {
   outline: var(--outline-focus-cold);
 }
 
-.mail-form__input:focus:valid {
+.mail-form__input:focus-visible:valid {
   background-color: var(--basic-white);
 
   outline: var(--outline-active);
 }
 
-.mail-form__input:focus:invalid {
+.mail-form__input:focus-visible:invalid {
   background-color: var(--basic-white);
 
   outline: var(--outline-error);
