@@ -74,36 +74,54 @@
           <form class="filter__form" action="https://echo.htmlacademy.ru/">
             <fieldset class="filter__group filter__group--infrastructure">
               <legend class="filter__title">Инфраструктура:</legend>
-              <ul class="filter__list">
-                <li class="filter__item">
-                  <input type="checkbox" name="pool" value="pool" id="pool" checked>
-                  <label for="pool">Бассейн</label>
+              <ul class="filter__list comfort">
+                <li class="comfort__item">
+                  <label class="comfort__label">
+                    <input class="comfort__input visually-hidden" id="pool" type="checkbox" name="pool" value="pool" checked>
+                    <span class="comfort__control"></span>
+                    Бассейн
+                  </label>
                 </li>
-                <li class="filter__item">
-                  <input type="checkbox" name="parking" value="parking" id="parking" checked>
-                  <label for="parking">Парковка</label>
+                <li class="comfort__item">
+                  <label class="comfort__label">
+                    <input class="comfort__input visually-hidden" id="parking" type="checkbox" name="parking" value="parking" checked>
+                    <span class="comfort__control"></span>
+                    Парковка
+                  </label>
                 </li>
-                <li class="filter__item">
-                  <input type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi">
-                  <label for="wi-fi">Wi-Fi</label>
+                <li class="comfort__item">
+                  <label class="comfort__label">
+                    <input class="comfort__input visually-hidden" type="checkbox" name="wi-fi" value="wi-fi">
+                    <span class="comfort__control"></span>
+                    Wi-Fi
+                  </label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="filter__group filter__group--type">
               <legend class="filter__title">Тип жилья:</legend>
-              <ul class="filter__list">
-                <li class="filter__item">
-                  <input type="radio" name="housing-type" value="hotel" id="hotel" checked>
-                  <label for="hotel">Гостиница</label>
+              <ul class="filter__list house-type">
+                <li class="house-type__item">
+                  <label class="house-type__label">
+                    <input class="house-type__input visually-hidden" type="radio" name="housing-type" value="hotel">
+                    <span class="house-type__control"></span>
+                    Гостиница
+                  </label>
                 </li>
-                <li class="filter__item">
-                  <input type="radio" name="housing-type" value="motel" id="motel">
-                  <label for="motel">Мотель</label>
+                <li class="house-type__item">
+                  <label class="house-type__label">
+                    <input class="house-type__input visually-hidden" type="radio" name="housing-type" value="motel">
+                    <span class="house-type__control"></span>
+                    Мотель
+                  </label>
                 </li>
-                <li class="filter__item">
-                  <input type="radio" name="housing-type" value="apartments" id="apartments">
-                  <label for="apartments">Апартаменты</label>
+                <li class="house-type__item">
+                  <label class="house-type__label">
+                    <input class="house-type__input visually-hidden" type="radio" name="housing-type" value="apartments">
+                    <span class="house-type__control"></span>
+                    Апартаменты
+                  </label>
                 </li>
               </ul>
             </fieldset>
