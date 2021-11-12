@@ -85,13 +85,12 @@ body {
   cursor: pointer;
 }
 
-.button:focus-visible { outline: var(--outline-focus-cold); }
-
-.button:active {
-  color: var(--basic-white-30);
-
-  outline: none;
+.button:focus-visible {
+  outline: var(--outline-focus-cold);
+  outline-offset: 0;
 }
+
+.button:active { color: var(--basic-white-30); }
 
 /* button-warm */
 .button--warm:hover { background-color: var(--special-warm-dark); }
@@ -176,8 +175,6 @@ body {
   line-height: 26px;
   text-decoration: none;
   color: inherit;
-
-  outline: none;
 }
 
 .page-nav__link:hover:not(.page-nav__link--current) { color: var(--special-warm-light); }
@@ -190,10 +187,7 @@ body {
   outline: var(--outline-focus-cold);
 }
 
-.page-nav__link:active:not(.page-nav__link--current) {
-  outline: none;
-  opacity: 0.3;
-}
+.page-nav__link:active:not(.page-nav__link--current) { opacity: 0.3; }
 
 .page-nav__link--current::before {
   position: absolute;
@@ -251,8 +245,6 @@ body {
 }
 
 .user-menu__link:active .user-menu__svg { opacity: 0.3; }
-
-.user-menu__link:active { outline: none; }
 
 .user-menu__link:active .user-menu__counter { color: var(--basic-white-30); }
 
@@ -689,7 +681,6 @@ body {
   color: var(--basic-white-60);
 
   box-shadow: none;
-  outline: none;
 }
 
 .price__input:focus-visible {
@@ -702,7 +693,6 @@ body {
 
   background-color: var(--special-warm-light);
   box-shadow: none;
-  outline: none;
 }
 
 .price__input::-webkit-outer-spin-button,
@@ -818,11 +808,7 @@ body {
 
 .filter__btn--reset:focus-visible { outline: var(--outline-focus-cold); }
 
-.filter__btn--reset:active {
-  color: var(--basic-white-30);
-
-  outline: none;
-}
+.filter__btn--reset:active { color: var(--basic-white-30); }
 
 /* Sorting */
 .sorting {
@@ -853,7 +839,7 @@ body {
 .sorting__label { position: relative; }
 
 .sorting__options {
-  padding: 7px 101px 12px 17px;
+  padding: 9px 101px 10px 17px;
   font-family: inherit;
   font-size: 18px;
   line-height: 23px;
@@ -876,7 +862,6 @@ body {
   color: var(--basic-gray-dark);
 
   border-color: var(--basic-gray-light);
-  outline: none;
 }
 
 .sorting__icon {
@@ -927,11 +912,7 @@ body {
 .sorting__link--list { background-image: url("../img/catalog/svg/mode-list.svg"); }
 
 .sorting__link:hover,
-.sorting__link:focus-visible {
-  border-color: var(--special-cold-light);
-
-  outline: none;
-}
+.sorting__link:focus-visible { border-color: var(--special-cold-light); }
 
 .sorting__link:active { border-color: var(--basic-black); }
 
@@ -975,12 +956,18 @@ body {
   border-bottom: 1px solid var(--basic-gray-light);
 }
 
-.catalog-article__img-link { grid-row: 1 / -1; }
-
-.catalog-article__img {
-  display: block;
-  padding-top: 3px;
+.catalog-article__img-link {
+  grid-row: 1 / -1;
+  margin-top: 3px;
 }
+
+.catalog-article__img-link:hover { opacity: 0.6; }
+
+.catalog-article__img-link:focus-visible { outline: var(--outline-focus-cold); }
+
+.catalog-article__img-link:active { opacity: 0.3; }
+
+.catalog-article__img { display: block; }
 
 .catalog-article__title-link  {
   grid-column: 3 / -2;
@@ -988,6 +975,22 @@ body {
 
   color: inherit;
   text-decoration: none;
+}
+
+.catalog-article__title-link:hover { color: var(--special-warm-light); }
+
+.catalog-article__title-link:focus-visible {
+  color: var(--special-warm-light);
+
+  border-radius: var(--border-radius-small);
+  outline: var(--outline-focus-cold);
+  outline-offset: 5px;
+}
+
+.catalog-article__title-link:active {
+  color: var(--special-warm-light);
+
+  opacity: 0.3;
 }
 
 .catalog-article__title {
@@ -1084,6 +1087,8 @@ body {
 }
 
 .pagination__item:not(:last-child) { margin-right: 8px; }
+
+.pagination__item:last-child { margin-left: -1px; }
 
 .pagination__link {
   display: inline-block;
@@ -1311,10 +1316,7 @@ body {
 
 .social__link:focus .social__svg { fill: var(--special-cold-dark); }
 
-.social__link:active {
-  opacity: 0.3;
-  outline: none;
-}
+.social__link:active { opacity: 0.3; }
 
 .address-phone { font-style: normal; }
 
@@ -1340,7 +1342,6 @@ body {
   color: var(--special-warm-light);
 
   opacity: 0.3;
-  outline: none;
 }
 
 .contacts__link {
@@ -1358,10 +1359,7 @@ body {
   outline: var(--outline-focus-cold);
 }
 
-.contacts__link:active {
-  opacity: 0.3;
-  outline: none;
-}
+.contacts__link:active { opacity: 0.3; }
 
 .contacts__svg {
   display: block;
