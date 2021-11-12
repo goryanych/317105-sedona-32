@@ -1183,9 +1183,7 @@ body {
 .pagination__options:active + .pagination__icon { fill: var(--basic-gray-dark); }
 
 /* Section Search */
-.search {
-  text-align: center;
-}
+.search { text-align: center; }
 
 .search__title {
   margin-bottom: 31px;
@@ -1230,7 +1228,10 @@ body {
   text-align: center;
 }
 
-.subscribe--inner { padding-top: 39px; }
+.subscribe--inner {
+  margin-bottom: 44px;
+  padding-top: 39px;
+}
 
 .subscribe-bg {
   color: var(--basic-white);
@@ -1251,7 +1252,7 @@ body {
 
 .subscribe__text {
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 47px;
   margin-left: auto;
   max-width: 545px;
 
@@ -1318,7 +1319,6 @@ body {
 .contacts {
   display: flex;
   align-items: center;
-  margin-top: 44px;
   padding: 28px 55px 38px 61px;
 }
 
