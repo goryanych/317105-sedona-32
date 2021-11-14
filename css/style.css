@@ -515,6 +515,7 @@ body {
   border-radius: var(--border-radius-small);
 
   outline: var(--outline-focus-cold);
+  outline-offset: 0;
 }
 
 .breadcrumbs__link:active { opacity: 0.3; }
@@ -905,7 +906,11 @@ body {
 .sorting__link--list { background-image: url("../img/catalog/svg/mode-list.svg"); }
 
 .sorting__link:hover,
-.sorting__link:focus-visible { border-color: var(--special-cold-light); }
+.sorting__link:focus-visible {
+  border-color: var(--special-cold-light);
+
+  outline: none;
+}
 
 .sorting__link:active { border-color: var(--basic-black); }
 
@@ -1031,6 +1036,33 @@ body {
 .catalog-article__link--favorites-green { background-color: var(--special-neutral-light); }
 
 .catalog-article__link--selected { background-color: var(--special-neutral-light); }
+
+.catalog-article__icon {
+  align-self: center;
+  margin: 0;
+  height: 17px;
+
+  background:
+    url("../img/catalog/svg/star-icon.svg"),
+    url("../img/catalog/svg/star-icon.svg"),
+    url("../img/catalog/svg/star-icon.svg"),
+    url("../img/catalog/svg/star-icon.svg");
+}
+
+.catalog-article__icon--four {
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: center left 32px, center left 57px, center left 82px, center right 37px;
+}
+
+.catalog-article__icon--three {
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center left 42px, center left 67px, center right 50px;
+}
+
+.catalog-article__icon--two {
+  background-repeat: no-repeat, no-repeat;
+  background-position: center left 57px, center right 61px;
+}
 
 .catalog-article__rating {
   grid-column: -1 / -2;
