@@ -376,6 +376,41 @@
 
   </div>
 
+  <section class="modal modal--close">
+    <div class="modal__container">
+      <button type="button">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+      </button>
+
+      <section class="modal__content">
+        <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/">
+          <div>
+            <label for="">Дата заезда:</label>
+            <input type="date" name="date">
+            <span>Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div>
+            <label for="">Дата выезда:</label>
+            <input type="date" name="date">
+            <span>На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div>
+            <label for="adults">Взрослые:</label>
+            <input type="number" name="adults" id="adults">
+          </div>
+          <div>
+            <label for="children">Дети:</label>
+            <button class="" type="button">
+              <span class="visually-hidden">Дополнительная информация</span>
+            </button>
+            <input type="number" name="children" id="children">
+          </div>
+          <button type="button">Найти</button>
+        </form>
+      </section>
+    </div>
+  </section>
   <script src="node_modules/pixel-glass/script.js"></script>
 </body>
 </html>
