@@ -93,6 +93,8 @@ body {
 .button:active { color: var(--basic-white-30); }
 
 /* button-warm */
+.button--warm { background-color: var(--special-warm-light); }
+
 .button--warm:hover { background-color: var(--special-warm-dark); }
 
 /* button-cold */
@@ -221,6 +223,8 @@ body {
   width: 260px;
 }
 
+.user-menu__item { position: relative; }
+
 .user-menu__link {
   position: relative;
   display: inline-block;
@@ -275,6 +279,134 @@ body {
 
   background-color: var(--status-success);
   border-radius: 10px;
+}
+
+.user-menu__popover {
+  position: absolute;
+  top: 48px;
+  left: -178px;
+
+  width: 400px;
+
+  box-sizing: border-box;
+}
+
+.popover-favorites {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--basic-white);
+  border-radius: 20px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.popover-favorites::before {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+
+  width: 10px;
+  height: 10px;
+  content: "";
+
+  background-color: var(--basic-white);
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-color: var(--basic-gray-light);
+
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.popover-favorites__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 18px 14px 26px 24px;
+
+  border: 1px solid var(--basic-gray-light);
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+
+  list-style: none;
+}
+
+.popover-favorites__item {
+  display: grid;
+  grid-template-columns: 1fr 36px;
+  column-gap: 17px;
+  margin-bottom: 19px;
+}
+
+.popover-favorites__item:last-child { margin-bottom: 0; }
+
+.popover-favorites__link {
+  display: grid;
+  grid-template-columns: 48px 17px 1fr;
+  grid-template-rows: min-content 1fr;
+  margin-top: 6px;
+
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.popover-favorites__pic {
+  display: block;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  border-radius: 50%;
+}
+
+.popover-favorites__title {
+  grid-column: 3 / 4;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.popover-favorites__desc {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+.popover-favorites__btn {
+  grid-column: -1 / -2;
+  margin: auto;
+  padding: 10px;
+  width: 36px;
+  height: 36px;
+
+  background-color: transparent;
+  background-image: url("../img/svg/trash-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: var(--border-radius-large);
+
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.popover-favorites__btn:hover { opacity: 1; }
+
+.popover-favorites__btn:focus-visible {
+  outline: var(--outline-focus-cold);
+  opacity: 1;
+}
+
+.popover-favorites__btn:active { opacity: 0.1; }
+
+.popover-favorites__link {
+  padding-top: 20px;
+  padding-bottom: 19px;
+
+  border-radius: 0 0 18px 20px;
 }
 
 /* Main */
