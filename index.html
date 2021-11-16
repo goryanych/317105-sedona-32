@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="node_modules/pixel-glass/styles.css">
   <style>
     HTML {
-      background-image: url("popap.jpg");
+      background-image: url("popover.jpg");
       background-repeat: no-repeat;
       background-position: 50% 0;
     }
@@ -45,11 +45,11 @@
             <span class="user-menu__counter">12</span>
             <span class="visually-hidden">Добавить в избранное</span>
           </a>
-          <div class="user-menu__popover popover-favorites">
+          <div class="user-menu__popover popover-favorites popover-favorites--visible">
             <h2 class="visually-hidden">Избранное</h2>
             <ul class="popover-favorites__list">
               <li class="popover-favorites__item">
-                <a class="popover-favorites__link" href="#">
+                <a class="popover-favorites__wrap-link" href="#">
                   <h3 class="popover-favorites__title">Desert Quail Inn</h3>
                   <img class="popover-favorites__pic" src="img/catalog/jpg/hotel-desert-quail.jpg" width="48" height="48" alt="Фото Desert Quail Inn.">
                   <p class="popover-favorites__desc">Мотель</p>
@@ -59,7 +59,7 @@
                 </button>
               </li>
               <li class="popover-favorites__item">
-                <a class="popover-favorites__link" href="#">
+                <a class="popover-favorites__wrap-link" href="#">
                   <h3 class="popover-favorites__title">Villas at Poco Diablo</h3>
                   <img class="popover-favorites__pic" src="img/catalog/jpg/hotel-villas-at-poco.jpg" width="48" height="48" alt="Фото Villas at Poco Diablo.">
                   <p class="popover-favorites__desc">Апартаменты</p>
@@ -72,7 +72,7 @@
             <a class="popover-favorites__link button button--warm" href="#">Все избранные</a>
           </div>
         </div>
-        <a class="user-menu__link user-menu__link--btn button" href="#">Хочу сюда!</a>
+        <a class="user-menu__link user-menu__link--btn button button--warm" href="#">Хочу сюда!</a>
       </div>
     </header>
 
@@ -149,7 +149,7 @@
       <!-- Search -->
       <section class="search">
         <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__desc search-desc">Укажите предполагаемые даты поездки,<br> <span class="search-desc__item">и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
+        <p class="search__desc search-desc">Укажите предполагаемые даты поездки, <span class="search-desc__item">и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
         <button class="search__btn button button--warm" type="button">Поиск гостиницы в седоне</button>
       </section>
     </main>

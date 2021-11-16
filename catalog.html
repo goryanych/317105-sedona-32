@@ -45,29 +45,25 @@
             <span class="user-menu__counter">12</span>
             <span class="visually-hidden">Добавить в избранное</span>
           </a>
-          <div class="user-menu__popover popover-favorites">
+          <div class="user-menu__popover popover-favorites popover-favorites--visible">
             <h2 class="visually-hidden">Избранное</h2>
             <ul class="popover-favorites__list">
               <li class="popover-favorites__item">
-                <a class="popover-favorites__pic-link" href="#">
-                  <img class="popover-favorites__pic" src="img/catalog/jpg/hotel-desert-quail.jpg" width="48" height="48" alt="Фото Desert Quail Inn.">
-                </a>
-                <a class="popover-favorites__title-link" href="#">
+                <a class="popover-favorites__wrap-link" href="#">
                   <h3 class="popover-favorites__title">Desert Quail Inn</h3>
+                  <img class="popover-favorites__pic" src="img/catalog/jpg/hotel-desert-quail.jpg" width="48" height="48" alt="Фото Desert Quail Inn.">
+                  <p class="popover-favorites__desc">Мотель</p>
                 </a>
-                <p class="popover-favorites__desc">Мотель</p>
                 <button class="popover-favorites__btn" type="button">
                   <span class="visually-hidden">Удалить</span>
                 </button>
               </li>
               <li class="popover-favorites__item">
-                <a class="popover-favorites__pic-link" href="#">
-                  <img class="popover-favorites__pic" src="img/catalog/jpg/hotel-villas-at-poco.jpg" width="48" height="48" alt="Фото Villas at Poco Diablo.">
-                </a>
-                <a class="popover-favorites__title-link" href="#">
+                <a class="popover-favorites__wrap-link" href="#">
                   <h3 class="popover-favorites__title">Villas at Poco Diablo</h3>
+                  <img class="popover-favorites__pic" src="img/catalog/jpg/hotel-villas-at-poco.jpg" width="48" height="48" alt="Фото Villas at Poco Diablo.">
+                  <p class="popover-favorites__desc">Апартаменты</p>
                 </a>
-                <p class="popover-favorites__desc">Апартаменты</p>
                 <button class="popover-favorites__btn" type="button">
                   <span class="visually-hidden">Удалить</span>
                 </button>
@@ -280,7 +276,7 @@
             <span>От 2000 ₽</span>
           </p>
           <a class="catalog-article__link catalog-article__link--details button button--warm" href="#">Подробнее</a>
-          <a class="catalog-article__link catalog-article__link--favorites catalog-article__link--favorites-green button button--success" href="#">В избранное</a>
+          <a class="catalog-article__link catalog-article__link--favorites button button--success" href="#">В избранное</a>
           <p class="catalog-article__icon catalog-article__icon--two">
             <span class="visually-hidden">2 звезды</span>
           </p>
@@ -311,12 +307,12 @@
       <section class="pagination">
         <h2 class="visually-hidden">Порядковая нумерация страниц</h2>
         <ul class="pagination__list">
-          <li class="pagination__item"><a class="pagination__link pagination__link--current">1</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#">...</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#">10</a></li>
+          <li class="pagination__item"><a class="pagination__link pagination__link--current button--cold">1</a></li>
+          <li class="pagination__item"><a class="pagination__link button--cold" href="#">2</a></li>
+          <li class="pagination__item"><a class="pagination__link button--cold" href="#">3</a></li>
+          <li class="pagination__item"><a class="pagination__link button--cold" href="#">4</a></li>
+          <li class="pagination__item"><a class="pagination__link button--cold" href="#">...</a></li>
+          <li class="pagination__item"><a class="pagination__link button--cold" href="#">10</a></li>
         </ul>
 
         <form class="pagination__form" action="https://echo.htmlacademy.ru/">
