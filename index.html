@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="node_modules/pixel-glass/styles.css">
   <style>
@@ -213,14 +214,16 @@
       <section class="modal__content modal-search">
         <h2 class="modal-search__title">Поиск гостиницы в Седоне</h2>
         <form class="modal-search__form search-form" action="https://echo.htmlacademy.ru/">
-          <div class="search-form__group search-form__group--date">
-            <label class="search-form__label" for="arrival">Дата заезда:</label>
-            <input class="search-form__input" id="arrival" type="text" name="date" value="27 апреля 2020" placeholder="Укажите дату" required>
+          <div class="search-form__group">
+            <label class="search-form__label search-form__label--date">Дата заезда:
+              <input class="search-form__input search-form__input--date" type="text" name="date" value="27 апреля 2020" placeholder="Укажите дату" required>
+            </label>
             <span class="search-form__prompt search-form__prompt--error">Мы не можем отправить вас в прошлое.</span>
           </div>
-          <div class="search-form__group search-form__group--date">
-            <label class="search-form__label" for="departure">Дата выезда:</label>
-            <input class="search-form__input" id="departure" type="text" name="date" value="1 сентября 2021" placeholder="Укажите дату" required>
+          <div class="search-form__group">
+            <label class="search-form__label search-form__label--date">Дата выезда:
+              <input class="search-form__input  search-form__input--date" type="text" name="date" value="1 сентября 2021" placeholder="Укажите дату" required>
+            </label>
             <span class="search-form__prompt search-form__prompt--success">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="search-form__group search-form__group--people">
