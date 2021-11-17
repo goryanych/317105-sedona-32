@@ -1657,12 +1657,15 @@ body {
 .search-form__group {
   position: relative;
 
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 40px;
   width: 575px;
 
   box-sizing: border-box;
+}
+
+.search-form__group--people {
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-form__adults,
@@ -1685,6 +1688,8 @@ body {
 }
 
 .search-form__label {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1692,6 +1697,23 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
+}
+
+.search-form__label--date::after {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  content: "";
+
+  width: 20px;
+  height: 20px;
+
+  background-color: transparent;
+  background-image: url("../img/svg/date-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: var(--opacity-30);
 }
 
 .search-form__input {
@@ -1706,6 +1728,7 @@ body {
   background-color: var(--basic-light);
   border: none;
   border-radius: 4px;
+  box-sizing: border-box;
 
   appearance: textfield;
 }
@@ -1726,7 +1749,7 @@ body {
 .search-form__input::-webkit-inner-spin-button { appearance: none; }
 
 .search-form__input--number {
-  width: 95px;
+  width: 135px;
 
   text-align: center;
 }
@@ -1740,6 +1763,11 @@ body {
   border: none;
 
   opacity: var(--opacity-60);
+}
+
+.search-form__input--date {
+  padding-right: 40px;
+  width: 420px;
 }
 
 .search-form__info {
