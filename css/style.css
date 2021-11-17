@@ -132,6 +132,8 @@ body {
   margin: 0 auto;
   width: 1200px;
   height: 100vh;
+
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -1434,7 +1436,7 @@ body {
 
 .mail-form__input {
   flex-grow: 1;
-  padding: 19px 21px 19px;
+  padding: 19px 21px;
 
   font: inherit;
 
@@ -1605,4 +1607,106 @@ body {
   position: relative;
 
   margin: auto;
+  margin-top: 396px;
+  padding: 37px 70px;
+
+  background-color: var(--basic-white);
+  border-radius: 30px;
+}
+
+.modal__btn {
+  position: absolute;
+  top: 53px;
+  right: 70px;
+
+  padding: 20px;
+
+  background-color: var(--basic-light);
+  border: none;
+  border-radius: 50%;
+}
+
+.modal-btn__icon { display: block; }
+
+.modal__btn:hover { background-color: var(--basic-gray-light); }
+
+.modal__btn:focus-visible {
+  background-color: var(--basic-gray-light);
+  outline: var(--outline-focus-cold);
+}
+
+.modal__btn:active .modal-btn__icon { opacity: var(--opacity-30); }
+
+
+.modal-search__title {
+  margin-bottom: 32px;
+
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.search-form__group {
+  position: relative;
+
+  display: flex;
+  margin-bottom: 40px;
+  width: 575px;
+}
+
+.search-form__label {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.search-form__input {
+  flex-grow: 1;
+  padding: 2px 19px 2px;
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+
+  background-color: var(--basic-light);
+  border: none;
+  border-radius: 4px;
+}
+
+.search-form__input:placeholder-shown {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: var(--basic-black);
+
+  border: none;
+
+  opacity: var(--opacity-60);
+}
+
+.search-form__prompt {
+  position: absolute;
+  top: 70px;
+  left: 155px;
+
+  line-height: 40px;
+}
+
+.search-form__prompt--error { color: var(--status-error); }
+
+.search-form__btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 20px;
+  line-height: 40px;
+
+  border-radius: var(--border-radius-large);
 }
