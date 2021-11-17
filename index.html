@@ -126,7 +126,7 @@
               <p class="about__num">— №2 —</p>
               <p class="about__desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
-            <img class="about__img about__img--reverse" class="about__img about__img--reverse" src="img/jpg/devil-bridge.jpg" width="800" height="384" alt="Фото Мост Дьявола.">
+            <img class="about__img about__img--reverse" src="img/jpg/devil-bridge.jpg" width="800" height="384" alt="Фото Мост Дьявола.">
           </li>
           <li class="about__item">
             <h3 class="about__title">Небольшая площадь</h3>
@@ -201,7 +201,7 @@
 
   </div>
 
-  <section class="modal modal--close">
+  <div class="modal modal--close">
     <div class="modal__container">
       <button class="modal__btn modal-btn" type="button">
         <svg class="modal-btn__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -210,35 +210,52 @@
         <span class="visually-hidden">Закрыть модальное окно</span>
       </button>
 
-      <section class="modal__content modal-search__content">
+      <section class="modal__content modal-search">
         <h2 class="modal-search__title">Поиск гостиницы в Седоне</h2>
         <form class="modal-search__form search-form" action="https://echo.htmlacademy.ru/">
           <div class="search-form__group search-form__group--date">
-            <label class="search-form__label" for="">Дата заезда:</label>
-            <input class="search-form__input" type="text" name="date" placeholder="Укажите дату">
+            <label class="search-form__label" for="arrival">Дата заезда:</label>
+            <input class="search-form__input" id="arrival" type="text" name="date" value="27 апреля 2020" placeholder="Укажите дату" required>
             <span class="search-form__prompt search-form__prompt--error">Мы не можем отправить вас в прошлое.</span>
           </div>
           <div class="search-form__group search-form__group--date">
-            <label class="search-form__label" for="">Дата выезда:</label>
-            <input class="search-form__input" type="text" name="date" placeholder="Укажите дату">
+            <label class="search-form__label" for="departure">Дата выезда:</label>
+            <input class="search-form__input" id="departure" type="text" name="date" value="1 сентября 2021" placeholder="Укажите дату" required>
             <span class="search-form__prompt search-form__prompt--success">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="search-form__group search-form__group--people">
-            <label class="search-form__label">Взрослые:
-              <input class="search-form__input search-form__input--number" type="number" name="adults" id="adults">
-            </label>
-            <label class="search-form__label">Дети:
+            <div class="search-form__adults">
+              <label class="search-form__label" for="adults">Взрослые:</label>
+              <input class="search-form__input search-form__input--number" id="adults" type="number" name="adults" value="2">
+              <button class="search-form__input-btn search-form__input-btn--minus-adults" type="button">
+                <span class="visually-hidden">Убавить количество взрослых</span>
+              </button>
+              <button class="search-form__input-btn search-form__input-btn--plus-adults" type="button">
+                <span class="visually-hidden">Добавить количество взрослых</span>
+              </button>
+            </div>
+            <div class="search-form__child">
+              <label class="search-form__label" for="child">Дети:</label>
+              <input class="search-form__input search-form__input--number" id="child" type="number" name="child" value="1">
               <button class="search-form__info" type="button">
                 <span class="visually-hidden">Дополнительная информация</span>
               </button>
-              <input class="search-form__input search-form__input--number" type="number" name="children" id="children">
-            </label>
+              <button class="search-form__input-btn search-form__input-btn--minus-child" type="button">
+                <span class="visually-hidden">Убавить количество детей</span>
+              </button>
+              <button class="search-form__input-btn search-form__input-btn--plus-child" type="button">
+                <span class="visually-hidden">Добавить количество детей</span>
+              </button>
+              <div class="search-form__popover search-popover">
+                <p class="search-popover__text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              </div>
+            </div>
           </div>
           <button class="search-form__btn button button--cold" type="button">Найти</button>
         </form>
       </section>
     </div>
-  </section>
+  </div>
   <script src="node_modules/pixel-glass/script.js"></script>
 </body>
 </html>
