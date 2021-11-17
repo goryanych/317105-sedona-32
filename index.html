@@ -213,29 +213,26 @@
       <section class="modal__content modal-search__content">
         <h2 class="modal-search__title">Поиск гостиницы в Седоне</h2>
         <form class="modal-search__form search-form" action="https://echo.htmlacademy.ru/">
-          <div class="search-form__group">
+          <div class="search-form__group search-form__group--date">
             <label class="search-form__label" for="">Дата заезда:</label>
             <input class="search-form__input" type="text" name="date" placeholder="Укажите дату">
             <span class="search-form__prompt search-form__prompt--error">Мы не можем отправить вас в прошлое.</span>
           </div>
-          <div class="search-form__group">
+          <div class="search-form__group search-form__group--date">
             <label class="search-form__label" for="">Дата выезда:</label>
             <input class="search-form__input" type="text" name="date" placeholder="Укажите дату">
             <span class="search-form__prompt search-form__prompt--success">На эти даты есть свободные номера. Пока есть.</span>
           </div>
-          <div class="search-form__row">
-            <div class="search-form__group">
-              <label class="search-form__label" for="adults">Взрослые:</label>
-              <input class="search-form__input" type="number" name="adults" id="adults">
-            </div>
-            <div class="search-form__group">
-              <label class="search-form__label" for="children">Дети:
-                <button class="search-form__info" type="button">
-                  <span class="visually-hidden">Дополнительная информация</span>
-                </button>
-              </label>
-              <input class="search-form__input" type="number" name="children" id="children">
-            </div>
+          <div class="search-form__group search-form__group--people">
+            <label class="search-form__label">Взрослые:
+              <input class="search-form__input search-form__input--number" type="number" name="adults" id="adults">
+            </label>
+            <label class="search-form__label">Дети:
+              <button class="search-form__info" type="button">
+                <span class="visually-hidden">Дополнительная информация</span>
+              </button>
+              <input class="search-form__input search-form__input--number" type="number" name="children" id="children">
+            </label>
           </div>
           <button class="search-form__btn button button--cold" type="button">Найти</button>
         </form>
