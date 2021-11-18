@@ -126,6 +126,14 @@ body {
   outline: var(--outline-focus-warm);
 }
 
+/* Invalid class for error style */
+
+.invalid:focus-visible:invalid {
+  background-color: var(--basic-white);
+
+  outline: var(--outline-error);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -1464,16 +1472,11 @@ body {
   outline: var(--outline-focus-cold);
 }
 
-.mail-form__input:focus-visible:valid {
+.mail-form__input:focus-visible:valid,
+.mail-form__input:active {
   background-color: var(--basic-white);
 
   outline: var(--outline-active);
-}
-
-.mail-form__input:focus-visible:invalid {
-  background-color: var(--basic-white);
-
-  outline: var(--outline-error);
 }
 
 .mail-form__btn {
@@ -1790,7 +1793,7 @@ body {
 
 .search-form__info:hover { background-color: var(--special-cold-light); }
 
-.search-form__info:focus-visible { outline: none; }
+.search-form__info:focus-visible { outline: var(--outline-focus-warm); }
 
 .search-form__input-btn {
   position: absolute;
