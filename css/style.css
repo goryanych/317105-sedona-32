@@ -1048,10 +1048,9 @@ body {
 
 .sorting__link {
   display: block;
-  padding: 14px 14px;
-  min-width: 16px;
-  min-height: 14px;
+  padding: 21px 22px;
 
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid var(--basic-gray-light);
@@ -1608,7 +1607,6 @@ body {
   position: relative;
 
   margin: auto;
-  margin-top: 396px;
   padding: 62px 71px 70px 70px;
 
   background-color: var(--basic-white);
